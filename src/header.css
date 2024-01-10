@@ -1,0 +1,95 @@
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index : 1;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: #2d2d34;
+    height: 80px;
+    text-align: center;
+}
+
+
+nav hr {
+    position: fixed;
+    width: 100%;
+    background-color: #2d2d34;
+}
+
+nav a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+nav ul {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+.MenuItem {
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles pour les smartphones */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    .menu-button {
+        display:block;
+        background-color: #128163;
+        border-radius: 10px;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 10px; 
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin: 0 auto;
+        z-index: 2;
+
+    }
+    .menu-button.menu-active {
+        background-color: gray;    
+    }
+    
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #222323;
+        z-index: 1;
+        text-align: center;
+        height: fit-content;
+    }
+
+    nav ul.show-menu {
+        display: block;
+    }
+
+  
+}
