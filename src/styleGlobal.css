@@ -1,4 +1,4 @@
-/*GLOBAL*/
+/*GLOBAL CSS FOR EVERY WEBPAGE*/
 
 *{
     margin: 0px;
@@ -15,17 +15,20 @@ body {
     padding-top: 80px;
 }
 
-main{
-    margin: 40px 20%;
-}
 
 nav {
     position: fixed;
     width: 100%;
     top: 0px;
     background-color: #2d2d34;
-    height: 80px;
+    height: fit-content;
     text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    align-items: center;
+    min-height: 60px;
 }
 
 nav hr {
@@ -77,12 +80,6 @@ nav > ul li:hover .sous{
     background-color: rgb(111, 186, 111);
 }
 
-nav ul {
-    display: inline-flex;
-    height: 100%;
-    align-items: center;
-}
-
 .MenuItem {
     padding: 0px 20px;
 }
@@ -125,5 +122,9 @@ article {
 
 #footerlinks {
     text-align: right;
-    padding: 30px;
+    margin: 10px 60px;
+}
+
+.triangle{
+    color: white;
 }
