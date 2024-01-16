@@ -1,38 +1,17 @@
+<?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleGlobal.css">
+    <link rel="icon" href="..\lib\img\logo.png" />
     <link rel="stylesheet" href="styleDefinition.css">
-    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="header.css">
     <title>Definition du green</title>
 </head>
 <body>
-    <head>
-        <nav>
-            <ul>
-                <li class="MenuItem"><a href="definition.html" class="allLinks">C'est quoi le numérique responsable ?</a></li>
-                <li class="MenuItem">
-                    <a href="commentEtPourquoiAgir.html" class="allLinks" class="deroulant">Comment et pourquoi agir à mon niveau ? <span class="triangle">▼</span></a>
-                    <ul class="sous">
-                        <li><a href="commentEtPourquoiAgir.html#associationAgir" value="association">Association</a></li>
-                        <li><a href="commentEtPourquoiAgir.html#collectiviteAgir" value="tpe">TPE</a></li>
-                        <li><a href="commentEtPourquoiAgir.html#entrepriseAgir" value="collectivite">Collectivité</a></li>
-                    </ul>
-                
-                </li>
-                <li class="MenuItem"><a href="outilsPourSAutoevaluer.html" class="allLinks">Outils pour s'autoévaluer</a></li>
-                <li class="MenuItem"><a href="comprendreSesResultats.html" class="allLinks">Comprendre ses résultats</a></li>
-                <li class="MenuItem">
-                    <a href="index.html">
-                        <img src="logo.png" alt="Logo de GreenInit" width="50" height="50">
-                    </a>
-                </li>
-            </ul>
-            <hr>
-        </nav>
-    </head>
+<script src="menu-toggle.js"></script>    
     <main>
         <h1>Le numérique responsable quésaco</h1>
             <section>
