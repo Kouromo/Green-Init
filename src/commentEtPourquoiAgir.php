@@ -50,7 +50,7 @@
     <footer>
         <hr>
         <div id="footerlinks">
-            <a href="rgpd.html" class="allLinks">RGPD</a>
+            <a href="rgpd.php" class="allLinks">RGPD</a>
         </div>
     </footer>
 </body>

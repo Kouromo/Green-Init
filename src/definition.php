@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleGlobal.css">
-    <link rel="icon" href="..\lib\img\logo.png" />
+    <link rel="icon" href="/img/logo.png" />
     <link rel="stylesheet" href="styleDefinition.css">
     <link rel="stylesheet" href="header.css">
     <title>Definition du green</title>
@@ -46,7 +46,7 @@
             <!--Footer RGPD-->
             <hr>
             <div id="footerlinks">
-                <a href="rgpd.html" class="allLinks">RGPD</a>
+                <a href="rgpd.php" class="allLinks">RGPD</a>
             </div>
     </footer>
 </body>

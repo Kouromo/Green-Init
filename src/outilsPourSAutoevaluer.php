@@ -62,14 +62,14 @@
                 </p>
                 <input type="text" name="outil3" id="outil3">
             </article>
-            <a href="comprendreSesResultats.html"><input type="button" value="Envoyer les résultats"/></a>
+            <a href="comprendreSesResultats.php"><input type="button" value="Envoyer les résultats"/></a>
         </form>
     </main>
     <footer>
         <!--Footer RGPD-->
         <hr>
         <div id="footerlinks">
-            <a href="rgpd.html" class="allLinks">RGPD</a>
+            <a href="rgpd.php" class="allLinks">RGPD</a>
         </div>
     </footer>
 </body>
