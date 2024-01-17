@@ -88,9 +88,6 @@ article {
     margin: 10px 60px;
 }
 
-.triangle{
-    color: white;
-}
 
 /*style écran plus petit*/
 @media screen and (max-width: 768px) {
