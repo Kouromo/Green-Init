@@ -13,7 +13,7 @@
     <script src="menu-toggle.js"></script>    
     <form>
         <h1>Questionnaire 3U</h1>
-        <p>*Utile, utilisable, utilisé</p>
+        <p>*Utile, Utilisable, Utilisé</p>
         <br>
         <section class="sectionU">
             <h2>Utile</h2>
