@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styleGlobal.css">
-        <link rel="icon" href="/img/logo.png" />
+        <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="footer.css">
@@ -29,8 +29,8 @@
                 <article>
                     <h2>Ce que nous offrons ✨</h2>
                     <ul>
-                        <li><p>Des ressources éducatives : Explorez nos pages et conseils pour comprendre les enjeux du Numérique Responsable et pourquoi l’appliquer à votre entreprise.</p></li>
-                        <li><p> Des outils d’auto-évaluation NR pour vos sites web </p></li>
+                        <li><p>Des ressources éducatives : Explorez nos pages et conseils pour comprendre les enjeux du Numérique Responsable et pourquoi l'appliquer à votre entreprise.</p></li>
+                        <li><p>Des outils d'autoévaluation NR pour vos sites web.</p></li>
                     </ul>
                     <hr>
                 </article>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styleGlobal.css">
-        <link rel="icon" href="..\lib\img\logo.png" />
+        <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="header.css">
         <title>Comment et pourquoi agir ?</title>
         <script src="matomo.js"></script>
@@ -17,7 +17,7 @@
                 <h1>Comment et pourquoi agir à mon niveau ?</h1>
                 <article>
                     <h2 id="associationAgir">Association</h2>
-                    <p>
+                    <p class="justifiedParagraph">
                     En tant qu'association, intégrer le Numérique Responsable dans vos activités peut avoir un impact positif sur votre image et votre mission.
                     En adoptant des pratiques numériques respectueuses de l'environnement, vous contribuez à la préservation de notre planète tout en montrant 
                     votre engagement envers la durabilité. Les membres de votre association peuvent également être sensibilisé.e.s aux enjeux du Numérique Responsable 
@@ -27,7 +27,7 @@
                 </article>
                 <article>
                     <h2 id="collectiviteAgir">Collectivité</h2>
-                    <p>
+                    <p class="justifiedParagraph">
                     Les collectivités ont un rôle crucial à jouer dans la transition vers un numérique plus responsable. En adoptant des politiques et des pratiques 
                     numériques durables, les municipalités peuvent réduire leur empreinte carbone et promouvoir une utilisation plus efficace des ressources. Le Numérique 
                     Responsable offre l'opportunité de développer des services numériques accessibles à tou.te.s, tout en soutenant le bien-être de la communauté locale.
@@ -36,7 +36,7 @@
                 </article>
                 <article>
                     <h2 id="entrepriseAgir">Entreprise</h2>
-                    <p>
+                    <p class="justifiedParagraph">
                     Pour les entreprises, le Numérique Responsable n'est pas seulement une tendance, c'est une nécessité. En adoptant des pratiques numériques durables,
                     vous pouvez réduire vos coûts opérationnels, améliorer votre image de marque et répondre aux attentes croissantes des consommateur.rice.s en matière 
                     de responsabilité environnementale. Les outils d'auto-évaluation NR spécifiques aux entreprises sur notre plateforme vous aident à identifier les opportunités 
