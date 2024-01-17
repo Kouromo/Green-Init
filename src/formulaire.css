@@ -29,3 +29,11 @@ label {
 input[type="radio"]:checked+label {
     font-weight: bold;
 }
+
+.answers {
+    color: lightgreen;
+}
+
+p {
+    margin-bottom: 10px;
+}
