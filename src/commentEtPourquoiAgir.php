@@ -13,7 +13,7 @@
 <script src="menu-toggle.js"></script>  
     <main>
         <section>
-            <h1>A big title</h1>
+            <h1>Comment et pourquoi agir à mon niveau ?</h1>
             <article>
                 <h2 id="associationAgir">Association</h2>
                 <p>
