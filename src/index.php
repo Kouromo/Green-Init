@@ -82,7 +82,7 @@
                     <div class="partnerSection">
                         <h3 class="partner">Nouvelle-Aquitaine Open Source</h3>
                         <div class="partnerContent">
-                            <img class="logoPartner" src="/img/LogoNaos.png" alt="Logo de Nouvelle-Aquitaine Open Source">
+                            <img class="logoPartner"  id="whiteBack" src="/img/LogoNaos.png" alt="Logo de Nouvelle-Aquitaine Open Source">
                             <p class="descPartner">
                                 Nouvelle-Aquitaine Open Source (NAOS) est un pôle de compétences régional en logiciels et technologies libres et open source. Son 
                                 objectif est de promouvoir le développement d'une filière économique pour les technologies libres et open source sur le territoire de 
