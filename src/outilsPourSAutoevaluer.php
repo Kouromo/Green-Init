@@ -13,7 +13,7 @@
 <body>
 <script src="menu-toggle.js"></script>
     <main>
-        <h1>A big title</h1>
+        <h1>Outils pour s'auto-évaluer</h1>
         <form>
             <article>
                 <h2>Éco-index</h2>
