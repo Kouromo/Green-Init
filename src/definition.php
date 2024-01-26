@@ -1,16 +1,16 @@
-<?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleGlobal.css">
-    <link rel="icon" href="/img/logo.png" />
-    <link rel="stylesheet" href="styleDefinition.css">
-    <link rel="stylesheet" href="header.css">
-    <title>Definition du green</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleGlobal.css">
+        <link rel="icon" href="/img/logo.png" />
+        <link rel="stylesheet" href="styleDefinition.css">
+        <link rel="stylesheet" href="header.css">
+        <title>Definition du green</title>
+    </head>
+    <body>
+    <?php include 'header.php'; ?>
     <script src="menu-toggle.js"></script>    
         <main>
             <h1>Le numérique responsable quésaco</h1>
@@ -36,12 +36,6 @@
                 <p>Ici, lorsqu'on parle d'accessibilité, nous parlons de l'accessibilité du web, c'est à dire de permettre aux utilisateurs ayant un handicap (mauvaise vision, daltonisme, incapacité à utiliser la souris, ...) de pouvoir naviguer sur le site sans aucune contrainte. </p>
             </section>
         </main>
-        <footer>
-                <!--Footer RGPD-->
-                <hr>
-                <div id="footerlinks">
-                    <a href="rgpd.php" class="allLinks">RGPD</a>
-                </div>
-        </footer>
+        <?php include 'footer.php'; ?>
     </body>
 </html>

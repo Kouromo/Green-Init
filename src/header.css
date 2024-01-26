@@ -29,11 +29,6 @@ nav a {
     text-decoration: none;
 }
 
-nav > ul li:hover .sous{
-    display: block;
-    position: absolute;
-    z-index: 1;
-}
 
 nav ul {
     display: inline-flex;
@@ -49,6 +44,15 @@ nav ul {
 .triangle{
     color: white;
 }
+
+@media screen and (min-width: 769px){
+    nav > ul li:hover .sous{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     /* Styles pour les smartphones */
@@ -95,5 +99,9 @@ nav ul {
         display: block;
     }
 
+    .MenuItem {
+        position: relative; /* Ajoutez cette ligne */
+        padding: 0px 20px;
+    }
   
 }

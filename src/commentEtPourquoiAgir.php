@@ -1,16 +1,16 @@
-<?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleGlobal.css">
-    <link rel="icon" href="..\lib\img\logo.png" />
-    <link rel="stylesheet" href="header.css">
-    <title>Comment et pourquoi agir ?</title>
-</head>
-<body>
-<script src="menu-toggle.js"></script>  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleGlobal.css">
+        <link rel="icon" href="..\lib\img\logo.png" />
+        <link rel="stylesheet" href="header.css">
+        <title>Comment et pourquoi agir ?</title>
+    </head>
+    <body>
+        <?php include 'header.php'; ?>
+        <script src="menu-toggle.js"></script>  
     <main>
         <section>
             <h1>Comment et pourquoi agir à mon niveau ?</h1>
@@ -45,10 +45,5 @@
             </article>
         </section>
     </main>
-    <footer>
-        <hr>
-        <div id="footerlinks">
-            <a href="rgpd.php" class="allLinks">RGPD</a>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 </body>

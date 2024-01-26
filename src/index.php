@@ -1,4 +1,3 @@
-<?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -8,10 +7,12 @@
         <link rel="icon" href="/img/logo.png" />
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="footer.css">
         <title>GreenInit</title>
     </head>
     <body>
-    <script src="menu-toggle.js"></script>
+        <?php include 'header.php'; ?>
+        <script src="menu-toggle.js"></script>
         <main>
             <section>
                 <h1>GreenInit</h1>
@@ -93,12 +94,7 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <!--Footer RGPD-->
-            <hr>
-            <div id="footerlinks">
-                <a href="rgpd.php" class="allLinks">RGPD</a>
-            </div>
-        </footer>
+        <?php include 'footer.php'; ?>
     </body>
 </html>
+    
