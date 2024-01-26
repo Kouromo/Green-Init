@@ -1,4 +1,3 @@
-<?php include 'header.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -8,10 +7,12 @@
         <link rel="icon" href="/img/logo.png" />
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="footer.css">
         <title>GreenInit</title>
     </head>
     <body>
-    <script src="menu-toggle.js"></script>
+        <?php include 'header.php'; ?>
+        <script src="menu-toggle.js"></script>
         <main>
             <section>
                 <h1>GreenInit</h1>
@@ -82,7 +83,7 @@
                     <div class="partnerSection">
                         <h3 class="partner">Nouvelle-Aquitaine Open Source</h3>
                         <div class="partnerContent">
-                            <img class="logoPartner" src="/img/LogoNaos.png" alt="Logo de Nouvelle-Aquitaine Open Source">
+                            <img class="logoPartner"  id="whiteBack" src="/img/LogoNaos.png" alt="Logo de Nouvelle-Aquitaine Open Source">
                             <p class="descPartner">
                                 Nouvelle-Aquitaine Open Source (NAOS) est un pôle de compétences régional en logiciels et technologies libres et open source. Son 
                                 objectif est de promouvoir le développement d'une filière économique pour les technologies libres et open source sur le territoire de 
@@ -93,12 +94,7 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <!--Footer RGPD-->
-            <hr>
-            <div id="footerlinks">
-                <a href="rgpd.php" class="allLinks">RGPD</a>
-            </div>
-        </footer>
+        <?php include 'footer.php'; ?>
     </body>
 </html>
+    
