@@ -11,7 +11,7 @@
         <nav role="navigation">
             <ul>
                 <li class="MenuItem">
-                    <a href="definition.php" class="allLinks deroulant" aria-haspopup="true" <?php if ($current_page == 'definition.php') echo 'aria-current="page"'; ?>>
+                    <a class="deroulant">
                         Introduction au numérique responsable
                         <span class="triangle">▼</span>
                     </a>
@@ -21,7 +21,7 @@
                     </ul>
                 </li>
                 <li class="MenuItem">
-                    <a href="commentEtPourquoiAgir.php" class="allLinks deroulant" aria-haspopup="true" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>
+                    <a class="deroulant">
                         Comment et pourquoi agir à mon niveau ?
                         <span class="triangle">▼</span>
                     </a>

@@ -4,7 +4,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index : 1;
+    z-index: 1;
 }
 
 nav {
@@ -41,21 +41,20 @@ nav ul {
     padding: 0px 20px;
 }
 
-.triangle{
+.triangle {
     color: white;
 }
 
-@media screen and (min-width: 769px){
-    nav > ul li:hover .sous{
+
+    nav>ul li:hover .sous {
         display: block;
         position: absolute;
         z-index: 1;
     }
-}
 
 
 @media screen and (max-width: 768px) {
-    /* Styles pour les smartphones */
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -64,24 +63,30 @@ nav ul {
         color: white;
     }
 
+    nav>ul li:hover .sous {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
     .menu-button {
-        display:block;
-        background-color: #128163;
-        border-radius: 10px;
-        color: #eeeeee;
+        display: block;
+        background-color: #2ecc71;
+        border: none;
+        border-radius: 8px;
+        color: #ffffff;
         text-align: center;
-        font-size: 10px; 
-        width: 50px;
-        height: 50px;
+        font-size: 14px;
+        width: 60px;
+        height: 60px;
         cursor: pointer;
-        margin: 0 auto;
+        margin: 1% 2%;
         z-index: 2;
+        transition: background-color 0.3s ease;
+    }
 
+    .menu-button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
-    .menu-button.menu-active {
-        background-color: gray;    
-    }
-    
 
     nav ul {
         display: none;
@@ -95,13 +100,9 @@ nav ul {
         height: fit-content;
     }
 
-    nav ul.show-menu {
-        display: block;
+    .navbar ul.show-menu {
+        display: flex;
+        flex-direction: column;
     }
 
-    .MenuItem {
-        position: relative; /* Ajoutez cette ligne */
-        padding: 0px 20px;
-    }
-  
 }
