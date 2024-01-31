@@ -34,7 +34,7 @@
                 <li class="MenuItem"><a href="comprendreSesResultats.php" class="allLinks" <?php if ($current_page == 'comprendreSesResultats.php') echo 'aria-current="page"'; ?>>Comprendre ses résultats</a></li>
                 <li class="MenuItem">
                     <a href="index.php" <?php if ($current_page == 'index.php') echo 'aria-current="page"'; ?>>
-                        <img src="/img/logo.png" alt="Logo de GreenInit" width="50" height="50">
+                        <img class="logoSite" src="/img/logo.png" alt="Logo de GreenInit">
                     </a>
                 </li>
             </ul>
