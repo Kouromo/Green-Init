@@ -98,7 +98,22 @@ article {
 
     p{font-size: 10px}
 
-    img{size: 25%;}
+    img{width: 25%;
+    height: auto;}
+
+    .partnerContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgContent {
+        margin-bottom: 15px; /* Ajoutez une marge entre l'image et le texte pour une meilleure lisibilité */
+    }
+
+    .descPartner {
+        max-width: 100%; /* Fait en sorte que le texte occupe la largeur complète de l'écran */
+    }
 
 }
 

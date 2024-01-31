@@ -1,5 +1,4 @@
 <?php
-    // Récupérez le nom du fichier actuel.
     $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
