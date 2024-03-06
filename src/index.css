@@ -23,6 +23,11 @@
     margin-bottom: 10px;
 }
 
+.descPartner {
+    margin: 30px;
+    text-align: justify;
+}
+
 #whiteBack {
     background-color: #fff;
 }
