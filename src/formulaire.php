@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="formulaire.css">
 		<link rel="stylesheet" href="header.css">
 		<title>Formulaire 3U</title>
+		<script src="matomo.js"></script>
 	</head>
 	<body>
 		<?php include 'header.php'; ?>

@@ -8,10 +8,11 @@
         <link rel="stylesheet" href="styleDefinition.css">
         <link rel="stylesheet" href="header.css">
         <title>Definition du green</title>
+        <script src="matomo.js"></script>
     </head>
     <body>
-    <?php include 'header.php'; ?>
-    <script src="menu-toggle.js"></script>    
+        <?php include 'header.php'; ?>
+        <script src="menu-toggle.js"></script>    
         <main>
             <h1>Le numérique responsable quésaco</h1>
             <section>

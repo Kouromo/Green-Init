@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="footer.css">
         <title>Green Init</title>
+        <script src="matomo.js"></script>
     </head>
     <body>
         <?php include 'header.php'; ?>

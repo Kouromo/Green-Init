@@ -7,6 +7,7 @@
         <link rel="icon" href="..\lib\img\logo.png" />
         <link rel="stylesheet" href="header.css">
         <title>Connexion</title>
+        <script src="matomo.js"></script>
     </head>
     <body>
         <?php include 'header.php'; ?>
