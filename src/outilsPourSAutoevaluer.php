@@ -36,7 +36,7 @@
 				</article>
 				<hr>
 				<article>
-					<h2>Outil</h2>
+					<h2>Wave</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur 
 						adipisicing elit. Sapiente illum praesentium 
@@ -44,21 +44,10 @@
 						dolor, cumque numquam unde repudiandae! Enim tempore 
 						ipsa fugit aliquam possimus voluptatibus.
 					</p>
-					<input type="text" name="outil3" id="outil3">
+					
 				</article>
 				<hr>
-				<article>
-					<h2>Outil</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur 
-						adipisicing elit. Sapiente illum praesentium 
-						natus quae placeat doloribus facilis possimus ab 
-						dolor, cumque numquam unde repudiandae! Enim tempore 
-						ipsa fugit aliquam possimus voluptatibus.
-					</p>
-					<input type="text" name="outil3" id="outil3">
-				</article>
-				<a href="comprendreSesResultats.php"><input type="button" value="Envoyer les résultats"/></a>
+				<a href="comprendreSesResultats.php"><input type="button" value="tester son site"/></a>
 			</form>
 		</main>
 		<?php include 'footer.php'; ?>

@@ -12,17 +12,36 @@
         <?php include 'header.php'; ?>
         <script src="menu-toggle.js"></script>  
         <main>
-            <form>
+            <form action="pageResultats.php" method="POST">
                 <div>
-                    <span>Outil numéro 1</span>
-                    <input type="text" name="outil1" id="outil1">
-                </div>
+                <a href="https://www.ecoindex.fr/" class="bigLinks">Éco-index</a>
+                    <span>Eco-index</span>
+                    <input type="text" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
+            </div>
+            <div>
+                <span>Poids</span>
+                <input type="text" name="poids" id="poids" placeholder="Poids">
+            </div>
+            <div>
+                <span>Complexité</span>
+                <input type="text" name="complexite" id="complexite" placeholder="Complexité">
+            </div>
+            <div>
+                <span>Requêtes</span>
+                <input type="text" name="requetes" id="requetes" placeholder="Requêtes">
+            </div>
+            <button type="submit">Envoyer les résultats</button>
+        </form>
+            </div>
+
+
+
                 <div>
-                    <span>Outil numéro 2</span>
+                    <span>GT metrix</span>
                     <input type="text" name="outil2" id="outil2">
                 </div>
                 <div>
-                    <span>Outil numéro 3</span>
+                    <span>Wave</span>
                     <input type="text" name="outil3" id="outil3">
                 </div>
                 <button type="submit">Envoyer les résultats</button>
