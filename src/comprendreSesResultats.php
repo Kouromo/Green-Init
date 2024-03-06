@@ -45,7 +45,6 @@
                         <input type="number" name="outil2" id="outil2" placeholder="Score GTMETRIX">
                     <div>
                 </section>
-
                 <button type="submit" class="bouton-vert">Envoyer les résultats</button>
             </form>
         </main>
