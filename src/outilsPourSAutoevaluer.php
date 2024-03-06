@@ -29,7 +29,7 @@
 				<article>
 					<h2>GTmetrix</h2>
 					<p>
-						Services en lignes Permettant de connaitre la vitesse de chargement des pages, grâce à un système de note allant de A à G et de pourcentage d'efficacité permettant 
+						Service en ligne permettant de connaitre la vitesse de chargement des pages, grâce à un système de note allant de A à G et de pourcentage d'efficacité permettant 
 						de savoir si le site est performant ainsi que de donner quelques pistes d'amélioration pour améliorer les performances qui sont fortement liée aux critère NR.
 					</p>
 					<a href="https://gtmetrix.com/" class="bigLinks" aria-label="lien vers le site GTmetrix">GTmetrix</a>
