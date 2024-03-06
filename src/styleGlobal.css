@@ -84,6 +84,32 @@ article {
     color: lightgreen;
     font-size: 24px;
 }
+.bouton-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bouton-vert {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.bouton-vert:hover {
+    background-color: darkgreen;
+}
+
 
 @media screen and (min-width: 769px) {
     main {
@@ -109,5 +135,5 @@ article {
 }
 
 hr {
-    margin: 40px 0px;
+    margin-top: 30px;
 }

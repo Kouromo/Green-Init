@@ -7,6 +7,7 @@
         <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="styleDefinition.css">
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
         <title>Definition du green</title>
         <script src="matomo.js"></script>
     </head>
