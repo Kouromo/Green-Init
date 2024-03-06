@@ -45,7 +45,6 @@
 					<a href="https://wave.webaim.org/" class="bigLinks" aria-label="lien vers le site Wave">Wave</a>
 				</article>
 				<hr>
-
 				<article>
 					<h2>EcoDiag</h2>
 					<p>
