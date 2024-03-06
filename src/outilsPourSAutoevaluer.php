@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="styleAutoevaluation.css">
 		<link rel="stylesheet" href="header.css">
 		<title>Pages d'outils pour s'auto-diagnostiquer</title>
+		<script src="matomo.js"></script>
 	</head>
 	<body>
 		<?php include 'header.php'; ?>

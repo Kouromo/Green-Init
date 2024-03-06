@@ -6,10 +6,11 @@
         <link rel="stylesheet" href="styleGlobal.css">
         <link rel="stylesheet" href="header.css">
         <title>Comment ses résultats</title>
+        <script src="matomo.js"></script>
     </head>
     <body>
-    <?php include 'header.php'; ?>
-    <script src="menu-toggle.js"></script>  
+        <?php include 'header.php'; ?>
+        <script src="menu-toggle.js"></script>  
         <main>
             <form>
                 <div>

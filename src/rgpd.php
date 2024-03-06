@@ -7,9 +7,10 @@
         <link rel="icon" href="..\lib\img\logo.png" />
         <link rel="stylesheet" href="header.css">
         <title>Inscription</title>
+        <script src="matomo.js"></script>
     </head>
-    <?php include 'header.php'; ?>
     <body>
+    <?php include 'header.php'; ?>
     <script src="menu-toggle.js"></script>
         <main>
             <!--RGPD du site d'auto-diagnostic NR-->
