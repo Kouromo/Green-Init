@@ -1,0 +1,29 @@
+form {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    box-shadow: 0 0 10px rgba(254, 254, 254, 0.1);
+}
+
+.sectionOutil {
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    flex: 1;
+}
+
+form input[type="number"] {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

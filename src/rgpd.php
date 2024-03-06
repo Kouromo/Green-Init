@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styleGlobal.css">
         <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
         <title>Inscription</title>
         <script src="matomo.js"></script>
     </head>

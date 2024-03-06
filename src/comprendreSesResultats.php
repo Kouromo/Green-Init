@@ -6,7 +6,9 @@
         <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="styleGlobal.css">
         <link rel="stylesheet" href="header.css">
-        <title>Comment ses résultats</title>
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="comprendreSesResultats.css">
+        <title>Compendre ses résultats</title>
         <script src="matomo.js"></script>
     </head>
     <body>
@@ -14,38 +16,37 @@
         <script src="menu-toggle.js"></script>  
         <main>
             <form action="pageResultats.php" method="POST">
-                <div>
-                <a href="https://www.ecoindex.fr/" class="bigLinks">Éco-index</a>
-                    <span>Eco-index</span>
-                    <input type="text" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
-            </div>
-            <div>
-                <span>Poids</span>
-                <input type="text" name="poids" id="poids" placeholder="Poids">
-            </div>
-            <div>
-                <span>Complexité</span>
-                <input type="text" name="complexite" id="complexite" placeholder="Complexité">
-            </div>
-            <div>
-                <span>Requêtes</span>
-                <input type="text" name="requetes" id="requetes" placeholder="Requêtes">
-            </div>
-            <button type="submit">Envoyer les résultats</button>
-        </form>
-            </div>
+                <h1>Comprendre ses résultats</h1>
+                <br>
+                <section class="sectionOutil">
+                    <h2><a href="https://www.ecoindex.fr/" class="bigLinks">Éco-index</a></h2>
+                    <br>
+                    <div>
+                        <label>Score</label>
+                        <input type="number" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
+                    </div>
+                    <div>
+                        <label>Poids</label>
+                        <input type="number" name="poids" id="poids" placeholder="Poids">
+                    </div>
+                    <div>
+                        <label>Complexité</label>
+                        <input type="number" name="complexite" id="complexite" placeholder="Complexité">
+                    </div>
+                    <div>
+                        <label>Requêtes</label>
+                        <input type="number" name="requetes" id="requetes" placeholder="Requêtes">
+                    </div>
+                </section>
+                <section class="sectionOutil">
+                    <h2><a href="https://gtmetrix.com/" class="bigLinks">GT metrix</a></h2>
+                    <div>
+                        <label>Score</label>
+                        <input type="number" name="outil2" id="outil2" placeholder="Score GTMETRIX">
+                    <div>
+                </section>
 
-
-
-                <div>
-                    <span>GT metrix</span>
-                    <input type="text" name="outil2" id="outil2">
-                </div>
-                <div>
-                    <span>Wave</span>
-                    <input type="text" name="outil3" id="outil3">
-                </div>
-                <button type="submit">Envoyer les résultats</button>
+                <button type="submit" class="bouton-vert">Envoyer les résultats</button>
             </form>
         </main>
         <?php include 'footer.php'; ?>

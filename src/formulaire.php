@@ -6,6 +6,7 @@
 		<link rel="icon" href="\img\logo.png" />
 		<link rel="stylesheet" href="formulaire.css">
 		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="footer.css">
 		<title>Formulaire 3U</title>
 		<script src="matomo.js"></script>
 	</head>

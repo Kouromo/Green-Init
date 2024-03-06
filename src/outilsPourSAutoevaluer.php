@@ -7,6 +7,7 @@
 		<link rel="icon" href="\img\logo.png" />
 		<link rel="stylesheet" href="styleAutoevaluation.css">
 		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="footer.css">
 		<title>Pages d'outils pour s'auto-diagnostiquer</title>
 		<script src="matomo.js"></script>
 	</head>
@@ -29,7 +30,7 @@
 				<article>
 					<h2>GTmetrix</h2>
 					<p>
-						Services en lignes Permettant de connaitre la vitesse de chargement des pages, grâce à un système de note allant de A à G et de pourcentage d'efficacité permettant 
+						Service en ligne permettant de connaitre la vitesse de chargement des pages, grâce à un système de note allant de A à G et de pourcentage d'efficacité permettant 
 						de savoir si le site est performant ainsi que de donner quelques pistes d'amélioration pour améliorer les performances qui sont fortement liée aux critère NR.
 					</p>
 					<a href="https://gtmetrix.com/" class="bigLinks" aria-label="lien vers le site GTmetrix">GTmetrix</a>
@@ -38,16 +39,24 @@
 				<article>
 					<h2>Wave</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur 
-						adipisicing elit. Sapiente illum praesentium 
-						natus quae placeat doloribus facilis possimus ab 
-						dolor, cumque numquam unde repudiandae! Enim tempore 
-						ipsa fugit aliquam possimus voluptatibus.
+						WAVE® est une suite d'outils d'évaluation qui aide les site Web plus accessible aux personnes handicapées. WAVE peut identifier de nombreuses erreurs d'accessibilité 
+						et des lignes directrices pour l'accessibilité du contenu, mais facilite également l'évaluation humaine du contenu Web.
 					</p>
-					
+					<a href="https://wave.webaim.org/" class="bigLinks" aria-label="lien vers le site Wave">Wave</a>
 				</article>
 				<hr>
-				<a href="comprendreSesResultats.php"><input type="button" value="tester son site"/></a>
+				<article>
+					<h2>EcoDiag</h2>
+					<p>
+						Ici, nous nous éloignons de votre site web pour mesurer le bilan carbonne de votre structure. Ecodiag permet, à partir d'un inventaire des équipements informatiques 
+						sur un périmètre donné, de calculer le bilan carbone d'une année. 
+					</p>
+					<a href="https://ecoinfo.cnrs.fr/ecodiag-calcul/" class="bigLinks" aria-label="lien vers l'outil Ecodiag sur le site EcoInfo">Ecodiag</a>
+				</article>
+				<hr>
+				<div class="bouton-result">
+					<a href="comprendreSesResultats.php"><input class="bouton-vert" type="button" value="Tester son site"/></a>
+				</div>
 			</form>
 		</main>
 		<?php include 'footer.php'; ?>

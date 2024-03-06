@@ -61,6 +61,9 @@
                             année de BUT Informatique dans le cadre d'un projet de fin de formation. 
                         </p>
                     </div>
+                    <div class="bouton-result">
+					    <a href="https://www.iutbayonne.univ-pau.fr/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+				    </div>
                 </article>
 
                 <article class="partner">
@@ -77,6 +80,9 @@
                             les citoyen.ne.s contributeur.rice.s, les associations et les acteur.rice.s du secteur privé, dans leurs projets dans lesquels le numérique apporte de la valeur ajoutée. 
                         </p>
                     </div>
+                    <div class="bouton-result">
+				        <a href="https://www.antic-paysbasque.com/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+				    </div>
                 </article>
 
                 <article class="partner">
@@ -91,6 +97,9 @@
                             Très impliquée dans le tissu local, notre coopérative s'engage au service de l'intérêt général et du développement économique, social, et culturel du Pays Basque. 
                         </p>
                     </div>
+                    <div class="bouton-result">
+                        <a href="https://alb-formation.eu/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+                    </div>
                 </article>
 
                 <article class="partner">
@@ -104,6 +113,9 @@
                             objectif est de promouvoir le développement d'une filière économique pour les technologies libres et open source sur le territoire de 
                             la région Nouvelle-Aquitaine. 
                         </p>
+                    </div>
+                    <div class="bouton-result">
+                        <a href="https://naos-cluster.com/"><input class="bouton-vert" type="button" value="Consulter"/></a>
                     </div>
                 </article>
 
