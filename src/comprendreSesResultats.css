@@ -1,0 +1,12 @@
+form {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    box-shadow: 0 0 10px rgba(254, 254, 254, 0.1);
+}
+
+.sectionOutil {
+    margin-bottom: 20px;
+}
+

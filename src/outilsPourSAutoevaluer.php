@@ -7,6 +7,7 @@
 		<link rel="icon" href="\img\logo.png" />
 		<link rel="stylesheet" href="styleAutoevaluation.css">
 		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="footer.css">
 		<title>Pages d'outils pour s'auto-diagnostiquer</title>
 		<script src="matomo.js"></script>
 	</head>
@@ -47,7 +48,9 @@
 					
 				</article>
 				<hr>
-				<a href="comprendreSesResultats.php"><input type="button" value="tester son site"/></a>
+				<div class="bouton-result">
+					<a href="comprendreSesResultats.php"><input class="bouton-vert" type="button" value="Tester son site"/></a>
+				</div>
 			</form>
 		</main>
 		<?php include 'footer.php'; ?>
