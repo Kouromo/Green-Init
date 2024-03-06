@@ -19,28 +19,33 @@
                 <h1>Comprendre ses résultats</h1>
                 <br>
                 <section class="sectionOutil">
-                    <h2>Eco-index</h2>
-                    <a href="https://www.ecoindex.fr/" class="bigLinks">Éco-index</a>
-                    <input type="text" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
+                    <h2><a href="https://www.ecoindex.fr/" class="bigLinks">Éco-index</a></h2>
+                    <br>
                     <div>
-                        <span>Poids</span>
-                        <input type="text" name="poids" id="poids" placeholder="Poids">
+                        <label>Score</label>
+                        <input type="number" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
                     </div>
                     <div>
-                        <span>Complexité</span>
-                        <input type="text" name="complexite" id="complexite" placeholder="Complexité">
+                        <label>Poids</label>
+                        <input type="number" name="poids" id="poids" placeholder="Poids">
                     </div>
                     <div>
-                        <span>Requêtes</span>
-                        <input type="text" name="requetes" id="requetes" placeholder="Requêtes">
+                        <label>Complexité</label>
+                        <input type="number" name="complexite" id="complexite" placeholder="Complexité">
+                    </div>
+                    <div>
+                        <label>Requêtes</label>
+                        <input type="number" name="requetes" id="requetes" placeholder="Requêtes">
                     </div>
                 </section>
                 <section class="sectionOutil">
-                    <h2>GT metrix</h2>
-                    <input type="text" name="outil2" id="outil2">
+                    <h2><a href="https://gtmetrix.com/" class="bigLinks">GT metrix</a></h2>
+                    <div>
+                        <label>Score</label>
+                        <input type="number" name="outil2" id="outil2" placeholder="Score GTMETRIX">
+                    <div>
                 </section>
-
-                <button type="submit">Envoyer les résultats</button>
+                <button type="submit" class="bouton-vert">Envoyer les résultats</button>
             </form>
         </main>
         <?php include 'footer.php'; ?>

@@ -10,3 +10,20 @@ form {
     margin-bottom: 20px;
 }
 
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    flex: 1;
+}
+
+form input[type="number"] {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
