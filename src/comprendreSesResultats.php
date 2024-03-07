@@ -16,41 +16,41 @@
         <?php include 'header.php'; ?>
         <script src="menu-toggle.js"></script>  
         <main>
-            <form action="pageResultats.php" method="POST">  
+            <form id="form" action="pageResultats.php" method="POST">  
                 <h1>Comprendre ses résultats</h1>
                 <br>
-                <section class="sectionOutil">
+                <section>
                     <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index</a></h2>
                     <br>
                     <div>
-                        <label>Score</label>
-                        <input type="number" class="ecoIndex" 
-                        name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index" >
+                        <label for="score_ecoindex">Score</label>
+                        <input type="number" class="ecoIndex" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
                     </div>
                     <div>
-                        <label>Poids</label>
+                        <label for="poids">Poids</label>
                         <input type="number" class="ecoIndex" name="poids" id="poids" placeholder="Poids" step="0.001">
                     </div>
                     <div>
-                        <label>Complexité</label>
+                        <label for="complexite">Complexité</label>
                         <input type="number" class="ecoIndex" name="complexite" id="complexite" placeholder="Complexité">
                     </div>
                     <div>
-                        <label>Requêtes</label>
+                        <label for="requetes">Requêtes</label>
                         <input type="number" class="ecoIndex" name="requetes" id="requetes" placeholder="Requêtes">
                     </div>
                 </section>
-                <section class="sectionOutil">
+                <section>
                     <h2><a href="https://gtmetrix.com/" target="_blank" class="bigLinks">GT metrix</a></h2>
                     <div>
-                        <label>Score</label>
-                        <input type="number" class="GTmetrix" name="score_gtmetrix" id="score_gtmetrix" placeholder="Score GTMETRIX">
+                        <label for="score_gtmetrix">Score</label>
+                        <input type="number" class="GTmetrix" name="score_gtmetrix" id="score_gtmetrix" placeholder="Score GTMETRIX" requiered="false">
                     <div>
                 </section>
                 <button type="submit" class="bouton-vert">Envoyer les résultats</button>
             </form>
         </main>
         <?php include 'footer.php'; ?>
+        <script src="required.js"></script>
         <script>
             tippy('#score_ecoindex', {
                 content: 'Score global sur 100'
