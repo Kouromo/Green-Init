@@ -20,11 +20,11 @@
 				<article>
 					<h2>Éco-index</h2>
 					<p>
-						Service en ligne proposé par <a href="https://greenit.fr" class="allLinks" aria-label="lien vers le site de Green IT">GreenIT.fr</a>, il fournit une note allant de A à G et une note sur 100, ainsi que quelques conseils pour améliorer son site web. 
+						Service en ligne proposé par <a href="https://greenit.fr" target="_blank" class="allLinks" aria-label="lien vers le site de Green IT">GreenIT.fr</a>, il fournit une note allant de A à G et une note sur 100, ainsi que quelques conseils pour améliorer son site web. 
 						Quelques mesures sur l'empreinte environnementale sont données pour pouvoir donner à l'utilisateur.rice une idée de la consommation des ressources de sa page. 
 						Le projet est en open source et est amélioré par ses contributeurs. 
 					</p>
-					<a href="https://www.ecoindex.fr/" class="bigLinks" aria-label="lien vers le site éco-index">Éco-index</a>
+					<a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks" aria-label="lien vers le site éco-index">Éco-index</a>
 				</article>
 				<hr>
 				<article>
@@ -33,7 +33,7 @@
 						Service en ligne permettant de connaitre la vitesse de chargement des pages, grâce à un système de note allant de A à G et de pourcentage d'efficacité permettant 
 						de savoir si le site est performant ainsi que de donner quelques pistes d'amélioration pour améliorer les performances qui sont fortement liée aux critère NR.
 					</p>
-					<a href="https://gtmetrix.com/" class="bigLinks" aria-label="lien vers le site GTmetrix">GTmetrix</a>
+					<a href="https://gtmetrix.com/" target="_blank" class="bigLinks" aria-label="lien vers le site GTmetrix">GTmetrix</a>
 				</article>
 				<hr>
 				<article>
@@ -42,7 +42,7 @@
 						WAVE® est une suite d'outils d'évaluation qui aide les site Web plus accessible aux personnes handicapées. WAVE peut identifier de nombreuses erreurs d'accessibilité 
 						et des lignes directrices pour l'accessibilité du contenu, mais facilite également l'évaluation humaine du contenu Web.
 					</p>
-					<a href="https://wave.webaim.org/" class="bigLinks" aria-label="lien vers le site Wave">Wave</a>
+					<a href="https://wave.webaim.org/" target="_blank" class="bigLinks" aria-label="lien vers le site Wave">Wave</a>
 				</article>
 				<hr>
 				<article>
@@ -51,7 +51,7 @@
 						Ici, nous nous éloignons de votre site web pour mesurer le bilan carbonne de votre structure. Ecodiag permet, à partir d'un inventaire des équipements informatiques 
 						sur un périmètre donné, de calculer le bilan carbone d'une année. 
 					</p>
-					<a href="https://ecoinfo.cnrs.fr/ecodiag-calcul/" class="bigLinks" aria-label="lien vers l'outil Ecodiag sur le site EcoInfo">Ecodiag</a>
+					<a href="https://ecoinfo.cnrs.fr/ecodiag-calcul/" target="_blank" class="bigLinks" aria-label="lien vers l'outil Ecodiag sur le site EcoInfo">Ecodiag</a>
 				</article>
 				<hr>
 				<div class="bouton-result">

@@ -62,7 +62,7 @@
                         </p>
                     </div>
                     <div class="bouton-result">
-					    <a href="https://www.iutbayonne.univ-pau.fr/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+					    <a href="https://www.iutbayonne.univ-pau.fr/" target="_blank"><input class="bouton-vert" type="button" value="Consulter"/></a>
 				    </div>
                 </article>
 
@@ -81,7 +81,7 @@
                         </p>
                     </div>
                     <div class="bouton-result">
-				        <a href="https://www.antic-paysbasque.com/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+				        <a href="https://www.antic-paysbasque.com/" target="_blank"><input class="bouton-vert" type="button" value="Consulter"/></a>
 				    </div>
                 </article>
 
@@ -98,7 +98,7 @@
                         </p>
                     </div>
                     <div class="bouton-result">
-                        <a href="https://alb-formation.eu/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+                        <a href="https://alb-formation.eu/" target="_blank"><input class="bouton-vert" type="button" value="Consulter"/></a>
                     </div>
                 </article>
 
@@ -115,7 +115,7 @@
                         </p>
                     </div>
                     <div class="bouton-result">
-                        <a href="https://naos-cluster.com/"><input class="bouton-vert" type="button" value="Consulter"/></a>
+                        <a href="https://naos-cluster.com/" target="_blank"><input class="bouton-vert" type="button" value="Consulter"/></a>
                     </div>
                 </article>
 
