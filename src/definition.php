@@ -33,8 +33,8 @@
                     un outil viable. 
                 </p>
             </section>
-            <h2>L'accessibilité du web</h2>
             <section>
+                <h2>L'accessibilité du web</h2>
                 <p>Ici, lorsqu'on parle d'accessibilité, nous parlons de l'accessibilité du web, c'est à dire de permettre aux utilisateurs ayant un handicap (mauvaise vision, daltonisme, incapacité à utiliser la souris, ...) de pouvoir naviguer sur le site sans aucune contrainte. </p>
             </section>
             <section>

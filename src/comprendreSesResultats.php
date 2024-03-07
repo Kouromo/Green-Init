@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="\img\logo.png" />
-        <link rel="stylesheet" href="styleGlobal.css">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="comprendreSesResultats.css">
+        <link rel="stylesheet" href="styleGlobal.css"/>
+        <link rel="stylesheet" href="header.css"/>
+        <link rel="stylesheet" href="footer.css"/>
+        <link rel="stylesheet" href="comprendreSesResultats.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
         <title>Compendre ses résultats</title>
         <script src="matomo.js"></script>
     </head>
@@ -23,11 +24,11 @@
                     <br>
                     <div>
                         <label>Score</label>
-                        <input type="number" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
+                        <input type="number" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index" >
                     </div>
                     <div>
                         <label>Poids</label>
-                        <input type="number" name="poids" id="poids" placeholder="Poids">
+                        <input type="number" name="poids" id="poids" placeholder="Poids" step="0.001">
                     </div>
                     <div>
                         <label>Complexité</label>
@@ -39,10 +40,10 @@
                     </div>
                 </section>
                 <section class="sectionOutil">
-                    <h2><a href="https://gtmetrix.com/" class="bigLinks">GT metrix</a></h2>
+                    <h2><a href="https://gtmetrix.com/" class="bigLinks">GTmetrix</a></h2>
                     <div>
                         <label>Score</label>
-                        <input type="number" name="outil2" id="outil2" placeholder="Score GTMETRIX">
+                        <input type="number" name="outil2" id="score_gtmetrix" placeholder="Score GTMETRIX">
                     <div>
                 </section>
 
@@ -50,5 +51,22 @@
             </form>
         </main>
         <?php include 'footer.php'; ?>
+        <script>
+            tippy('#score_ecoindex', {
+                content: 'Score global sur 100'
+            });
+            tippy('#poids', {
+                content: 'Poids de la page web en Mo'
+            });
+            tippy('#complexite', {
+                content: 'Simplicité de la page web en nombre d\'éléments'
+            });
+            tippy('#requetes', {
+                content: 'Nombre de requêtes sur la page web'
+            });
+            tippy('#score_gtmetrix', {
+                content: 'Score global'
+            });
+        </script>
     </body>
 </html>
