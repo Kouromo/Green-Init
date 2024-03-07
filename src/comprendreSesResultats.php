@@ -19,7 +19,7 @@
                 <h1>Comprendre ses résultats</h1>
                 <br>
                 <section class="sectionOutil">
-                    <h2><a href="https://www.ecoindex.fr/" class="bigLinks">Éco-index</a></h2>
+                    <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index</a></h2>
                     <br>
                     <div>
                         <label>Score</label>
@@ -39,7 +39,7 @@
                     </div>
                 </section>
                 <section class="sectionOutil">
-                    <h2><a href="https://gtmetrix.com/" class="bigLinks">GT metrix</a></h2>
+                    <h2><a href="https://gtmetrix.com/" target="_blank" class="bigLinks">GT metrix</a></h2>
                     <div>
                         <label>Score</label>
                         <input type="number" name="outil2" id="outil2" placeholder="Score GTMETRIX">
