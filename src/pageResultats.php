@@ -9,6 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Textes personnalisés en fonction des valeurs reçues
+
+
+
 $texte_poids = "";
 if ($poids < 1) {
     $texte_poids = "Bravo ! Votre site web est bien plus léger que la moyenne. Cependant, pour maintenir cette performance, vous pouvez encore optimiser son poids en suivant ces conseils :
@@ -26,7 +29,7 @@ if ($poids < 1) {
     - Analysez et éliminez les scripts et les ressources inutiles qui ralentissent le chargement de la page.
     - Mettez en cache les ressources statiques pour accélérer les temps de chargement et réduire la bande passante utilisée.";
 } else {
-    $texte_poids = "Votre site est plutôt lourd en termes de poids. Pour améliorer ses performances et réduire son impact sur le chargement des pages, vous pouvez envisager ces stratégies :
+    $texte_poids = "Votre site est aseez lourd en termes de poids. Pour améliorer ses performances et réduire son impact sur le chargement des pages, vous pouvez envisager ces stratégies :
     - Priorisez la compression et l'optimisation des images pour réduire la charge du serveur et accélérer le chargement.
     - Optimisez le code CSS et JavaScript en supprimant les doublons et en minimisant les fichiers pour réduire la taille des ressources téléchargées.
     - Utilisez des techniques avancées de mise en cache pour stocker temporairement les ressources fréquemment utilisées et améliorer les temps de réponse du serveur.";
@@ -88,8 +91,9 @@ if ($requetes < 30) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleGlobal.css">
-    <link rel="icon" href="..\lib\img\logo.png" />
+    <link rel="icon" href="\img\logo.png" />
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Résultats Écoindex</title>
 </head>
 <body>
