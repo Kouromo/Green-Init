@@ -16,7 +16,7 @@
         <?php include 'header.php'; ?>
         <script src="menu-toggle.js"></script>  
         <main>
-            <form action="pageResultats.php" method="POST">
+            <form action="pageResultats.php" method="POST">  
                 <h1>Comprendre ses résultats</h1>
                 <br>
                 <section class="sectionOutil">
@@ -24,19 +24,20 @@
                     <br>
                     <div>
                         <label>Score</label>
-                        <input type="number" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index" >
+                        <input type="number" class="ecoIndex" 
+                        name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index" >
                     </div>
                     <div>
                         <label>Poids</label>
-                        <input type="number" name="poids" id="poids" placeholder="Poids" step="0.001">
+                        <input type="number" class="ecoIndex" name="poids" id="poids" placeholder="Poids" step="0.001">
                     </div>
                     <div>
                         <label>Complexité</label>
-                        <input type="number" name="complexite" id="complexite" placeholder="Complexité">
+                        <input type="number" class="ecoIndex" name="complexite" id="complexite" placeholder="Complexité">
                     </div>
                     <div>
                         <label>Requêtes</label>
-                        <input type="number" name="requetes" id="requetes" placeholder="Requêtes">
+                        <input type="number" class="ecoIndex" name="requetes" id="requetes" placeholder="Requêtes">
                     </div>
                 </section>
                 <section class="sectionOutil">
