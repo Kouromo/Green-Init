@@ -44,7 +44,7 @@
                     <h2><a href="https://gtmetrix.com/" target="_blank" class="bigLinks">GT metrix</a></h2>
                     <div>
                         <label>Score</label>
-                        <input type="number" name="outil2" id="score_gtmetrix" placeholder="Score GTMETRIX">
+                        <input type="number" class="GTmetrix" name="score_gtmetrix" id="score_gtmetrix" placeholder="Score GTMETRIX">
                     <div>
                 </section>
                 <button type="submit" class="bouton-vert">Envoyer les résultats</button>
