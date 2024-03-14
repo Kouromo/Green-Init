@@ -40,22 +40,22 @@
                     </div>
                 </section>
                 <section>
-                    <h2><a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks"></a></h2>
+                    <h2><a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks">Page speed</a></h2>
                     <div>
                         <label for="performances">Performances</label>
-                        <input type="number" class="" name="performances" id="performances" placeholder="Performances" requiered="false">
+                        <input type="number" class="pageSpeed" name="performances" id="performances" placeholder="Performances" requiered="false">
                     </div>
                     <div>
                         <label for="accessibilite">Accessibilite</label>
-                        <input type="number" class="accessibilite" name="accessibilite" id="accessibilite" placeholder="Accessibilite" requiered="false">
+                        <input type="number" class="pageSpeed" name="accessibilite" id="accessibilite" placeholder="Accessibilite" requiered="false">
                     </div>
                     <div>
                         <label for="bonnes_pratique">Bonnes pratiques</label>
-                        <input type="number" class="bonnes_pratique" name="bonnes_pratique" id="bonnes_pratique" placeholder="Bonnes pratiques" requiered="false">
+                        <input type="number" class="pageSpeed" name="bonnes_pratique" id="bonnes_pratique" placeholder="Bonnes pratiques" requiered="false">
                     </div>
                     <div>
                         <label for="SEO">SEO</label>
-                        <input type="number" class="SEO" name="SEO" id="SEO" placeholder="SEO" requiered="false">
+                        <input type="number" class="pageSpeed" name="SEO" id="SEO" placeholder="SEO" requiered="false">
                     </div>
                 </section>
                 <button type="submit" class="bouton-vert">Envoyer les résultats</button>
