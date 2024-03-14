@@ -8,19 +8,22 @@
         <link rel="stylesheet" href="styleDefinition.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="footer.css">
-        <title>Definition du green</title>
+        <title>Définition du green</title>
         <script src="matomo.js"></script>
     </head>
     <body>
         <?php include 'header.php'; ?>
         <script src="menu-toggle.js"></script>    
         <main>
-            <h1>Le numérique responsable quésaco</h1>
+            <h1>Le numérique responsable quésaco</h1><br>
             <section>
                 <p class="justifiedParagraph">
-                    Le numérique responsable est une démarche d’amélioration qui vise à réduire l’empreinte écologique et sociale du numérique. 
-                    Le Green IT pour réduire l’empreinte environnementale et l’IT for green qui met le numérique au service du développement durable et la conception responsable des services numériques sont des composant du numériques responsable. 
-                    Le numérique responsable est un sujet d’importance pour notre avenir, les mœurs changent et les utilisateur.rice.s aussi. De plus en plus de projets Green voient le jour et c’est aujourd’hui au tour de l’informatique de faire sa transition. Il est donc important de pouvoir évaluer et mettre à niveaux nos outils d’aujourd’hui pour qu’ils puissent encore être utilisés demain. 
+                    Le numérique responsable est une démarche d'amélioration qui vise à réduire l'empreinte écologique et sociale du numérique. 
+                    Le Green IT pour réduire l'empreinte environnementale et l'IT for green qui met le numérique au service du développement durable et la 
+                    conception responsable des services numériques sont des composant du numériques responsable. 
+                    Le numérique responsable est un sujet d'importance pour notre avenir, les mœurs changent et les utilisateur.rice.s aussi. De plus en plus 
+                    de projets Green voient le jour et c'est aujourd'hui au tour de l'informatique de faire sa transition. Il est donc important de pouvoir 
+                    évaluer et mettre à niveaux nos outils d'aujourd'hui pour qu'ils puissent encore être utilisés demain. 
                 </p>
                 <img src="img1.png" alt="Image 1" width="50" height="50">
                 <img src="img2.png" alt="Image 2" width="50" height="50">
@@ -33,13 +36,13 @@
                     un outil viable. 
                 </p>
             </section>
+            <h2>L'accessibilité du web</h2><br>
             <section>
-                <h2>L'accessibilité du web</h2>
-                <p>Ici, lorsqu'on parle d'accessibilité, nous parlons de l'accessibilité du web, c'est à dire de permettre aux utilisateurs ayant un handicap (mauvaise vision, daltonisme, incapacité à utiliser la souris, ...) de pouvoir naviguer sur le site sans aucune contrainte. </p>
+                <p>
+                    Ici, lorsqu'on parle d'accessibilité, nous parlons de l'accessibilité du web, c'est à dire de permettre aux utilisateurs ayant un handicap 
+                    (mauvaise vision, daltonisme, incapacité à utiliser la souris, ...) de pouvoir naviguer sur le site sans aucune contrainte. 
+                </p>
             </section>
-            <section>
-                <h2>L'accessibilité du web</h2>
-                <p>Ici, lorsqu'on parle d'accessibilité, nous parlons de l'accessibilité du web, c'est à dire de permettre aux utilisateurs ayant un handicap (mauvaise vision, daltonisme, incapacité à utiliser la souris, ...) de pouvoir naviguer sur le site sans aucune contrainte. </p>
         </main>
         <?php include 'footer.php'; ?>
     </body>
