@@ -18,10 +18,10 @@ function isEveythingEmpty(className) {
     return true;
 }
 
-var pageSpeedElements = document.getElementsByClassName('ecoIndex');
-for (var i = 0; i < pageSpeedElements.length; i++) {
+var ecoIndexElements = document.getElementsByClassName('ecoIndex');
+for (var i = 0; i < ecoIndexElements.length; i++) {
 
-    pageSpeedElements[i].addEventListener('input', function() {
+    ecoIndexElements[i].addEventListener('input', function() {
         var isOneNotEmpty = isOneElementOfTheClassIsNotEmpty('ecoIndex');
         document.getElementById('score_ecoindex').required = isOneNotEmpty;
         document.getElementById('poids').required = isOneNotEmpty;
@@ -29,7 +29,7 @@ for (var i = 0; i < pageSpeedElements.length; i++) {
         document.getElementById('requetes').required = isOneNotEmpty;
     });
     
-    pageSpeedElements[i].addEventListener('input', function() {
+    ecoIndexElements[i].addEventListener('input', function() {
         var isEverythingEmpty = isEveythingEmpty('ecoIndex');
         if(isEverythingEmpty){
             document.getElementById('score_ecoindex').required = false;
