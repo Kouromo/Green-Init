@@ -18,10 +18,10 @@ function isEveythingEmpty(className) {
     return true;
 }
 
-var ecoIndexElements = document.getElementsByClassName('ecoIndex');
-for (var i = 0; i < ecoIndexElements.length; i++) {
+var pageSpeedElements = document.getElementsByClassName('ecoIndex');
+for (var i = 0; i < pageSpeedElements.length; i++) {
 
-    ecoIndexElements[i].addEventListener('input', function() {
+    pageSpeedElements[i].addEventListener('input', function() {
         var isOneNotEmpty = isOneElementOfTheClassIsNotEmpty('ecoIndex');
         document.getElementById('score_ecoindex').required = isOneNotEmpty;
         document.getElementById('poids').required = isOneNotEmpty;
@@ -29,7 +29,7 @@ for (var i = 0; i < ecoIndexElements.length; i++) {
         document.getElementById('requetes').required = isOneNotEmpty;
     });
     
-    ecoIndexElements[i].addEventListener('input', function() {
+    pageSpeedElements[i].addEventListener('input', function() {
         var isEverythingEmpty = isEveythingEmpty('ecoIndex');
         if(isEverythingEmpty){
             document.getElementById('score_ecoindex').required = false;
@@ -40,18 +40,18 @@ for (var i = 0; i < ecoIndexElements.length; i++) {
     });
 }
 
-var ecoIndexElements = document.getElementsByClassName('pageSpeed');
+var pageSpeedElements = document.getElementsByClassName('pageSpeed');
 for (var i = 0; i < pageSpeedElements.length; i++) {
 
-    ecoIndexElements[i].addEventListener('input', function() {
+    pageSpeedElements[i].addEventListener('input', function() {
         var isOneNotEmpty = isOneElementOfTheClassIsNotEmpty('pageSpeed');
-        document.getElementById('score_ecoindex').required = isOneNotEmpty;
-        document.getElementById('poids').required = isOneNotEmpty;
-        document.getElementById('complexite').required = isOneNotEmpty;
-        document.getElementById('requetes').required = isOneNotEmpty;
+        document.getElementById('performances').required = isOneNotEmpty;
+        document.getElementById('accessibilite').required = isOneNotEmpty;
+        document.getElementById('bonnes_pratique').required = isOneNotEmpty;
+        document.getElementById('SEO').required = isOneNotEmpty;
     });
     
-    ecoIndexElements[i].addEventListener('input', function() {
+    pageSpeedElements[i].addEventListener('input', function() {
         var isEverythingEmpty = isEveythingEmpty('pageSpeed');
         if(isEverythingEmpty){
             document.getElementById('performances').required = false;
