@@ -60,7 +60,7 @@
 						 Encore un outil en anglais, celui-ci indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
 						 est hébergé Green, à intégrer à votre site.
 					</p>
-					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation<</a>
+					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation</a>
 				</article>
 				<hr>
 				<div class="bouton-result">
