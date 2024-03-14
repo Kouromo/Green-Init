@@ -1,20 +1,16 @@
 function isOneElementOfTheClassIsNotEmpty(className) {
     var elements = document.getElementsByClassName(className);
-    for (var i = 0; i < elements.length; i++) {
-        if (elements[i].value !== '' && elements[i].value !== null) {
+    for (var i = 0; i < elements.length; i++)
+        if (elements[i].value !== '' && elements[i].value !== null) 
             return true;
-        }
-    }
     return false;
 }
 
 function isEveythingEmpty(className) {
     var elements = document.getElementsByClassName(className);
-    for (var i = 0; i < elements.length; i++) {
-        if (elements[i].value !== '' && elements[i].value !== null) {
+    for (var i = 0; i < elements.length; i++)
+        if (elements[i].value !== '' && elements[i].value !== null)
             return false;
-        }
-    }
     return true;
 }
 
