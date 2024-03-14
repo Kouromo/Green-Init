@@ -189,28 +189,59 @@ if ($performances!== null) {
     <script src="menu-toggle.js"></script>
     <main>
         <section>
-            <h2>Résultats Écoindex</h2>
-            <article>
-                <h3>Votre score Écoindex :</h3>
-                <p><?php echo $score_ecoindex; ?></p>
-            </article>
-            <article>
-                <h3>Le poids de votre site :</h3>
-                <p><?php echo $poids; ?></p>
-                <p><?php echo $texte_poids; ?></p>
-            </article>
-            <article>
-                <h3>La complexité de votre site :</h3>
-                <p><?php echo $complexite; ?></p>
-                <p><?php echo $texte_complexite; ?></p>
-            </article>
-            <article>
-                <h3>Le nombre de requêtes :</h3>
-                <p><?php echo $requetes; ?></p>
-                <p><?php echo $texte_requetes; ?></p>
-            </article>
-            <!-- Vous pouvez ajouter d'autres informations Écoindex ici -->
+            <?php if ($score_ecoindex !== null): ?>
+        <h2>Résultats Écoindex</h2>
+        <article>
+            <h3>Votre score Écoindex :</h3>
+            <p><?php echo $score_ecoindex; ?></p>
+        </article>
+        <article>
+            <h3>Le poids de votre site :</h3>
+            <p><?php echo $poids; ?></p>
+            <p><?php echo $texte_poids; ?></p>
+        </article>
+        <article>
+            <h3>La complexité de votre site :</h3>
+            <p><?php echo $complexite; ?></p>
+            <p><?php echo $texte_complexite; ?></p>
+        </article>
+        <article>
+            <h3>Le nombre de requêtes :</h3>
+            <p><?php echo $requetes; ?></p>
+            <p><?php echo $texte_requetes; ?></p>
+        </article>
+            <?php endif; ?>
         </section>
+
+        <section>
+        <?php if ($score_speedpages !== null): ?>
+        <h2>Résultats Speedpages</h2>
+        <article>
+            <h3>Votre score Speedpages :</h3>
+            <p><?php echo $score_speedpages; ?></p>
+        </article>
+        <article>
+            <h3>Performances de votre site :</h3>
+            <p><?php echo $performances; ?></p>
+            <p><?php echo $texte_performances; ?></p>
+        </article>
+        <article>
+            <h3>Accessibilité de votre site :</h3>
+            <p><?php echo $accessibilite; ?></p>
+            <p><?php echo $texte_accessibilite; ?></p>
+        </article>
+        <article>
+            <h3>Bonnes pratiques de votre site :</h3>
+            <p><?php echo $bonnes_pratiques; ?></p>
+            <p><?php echo $texte_bonnes_pratiques; ?></p>
+        </article>
+        <article>
+            <h3>SEO de votre site :</h3>
+            <p><?php echo $SEO; ?></p>
+            <p><?php echo $texte_SEO; ?></p>
+        </article>
+         <?php endif; ?>
+
     </main>
     <?php include 'footer.php'; ?>
 </body>
