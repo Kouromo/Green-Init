@@ -18,7 +18,3 @@ Le dossier **docs** renferme toute la documentation essentielle pour comprendre 
 
 ### Code Source
 Le dossier **src** contient l'ensemble du code source du projet. Vous pouvez explorer les fichiers et les sources pour mieux comprendre notre approche et nos solutions pour le N.R.
-
-### Bibliothèques
-Le dossier **lib** peut contenir des bibliothèques externes qui sont utilisées dans le cadre de ce projet. Ces ressources sont mises à disposition pour garantir un fonctionnement fluide.
-.

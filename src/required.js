@@ -1,35 +1,49 @@
-document.getElementById('score_ecoindex').addEventListener('input', function() {
-    var isScoreEcoindexFilled = this.value !== '' || this.value !== null;
-    document.getElementById('poids').required = isScoreEcoindexFilled;
-    document.getElementById('complexite').required = isScoreEcoindexFilled;
-    document.getElementById('requetes').required = isScoreEcoindexFilled;
-});
+function isOneElementOfTheClassIsNotEmpty(className) {
+    var elements = document.getElementsByClassName(className);
+    for (var i = 0; i < elements.length; i++) {
+        if (elements[i].value !== '' && elements[i].value !== null) {
+            return true;
+        }
+    }
+    return false;
+}
 
-//si tous les champs sont vides, refuse la soumission
+function isEveythingEmpty(className) {
+    var elements = document.getElementsByClassName(className);
+    for (var i = 0; i < elements.length; i++) {
+        if (elements[i].value !== '' && elements[i].value !== null) {
+            return false;
+        }
+    }
+    return true;
+}
+
+var ecoIndexElements = document.getElementsByClassName('ecoIndex');
+for (var i = 0; i < ecoIndexElements.length; i++) {
+
+    ecoIndexElements[i].addEventListener('input', function() {
+        var isOneNotEmpty = isOneElementOfTheClassIsNotEmpty('ecoIndex');
+        document.getElementById('score_ecoindex').required = isOneNotEmpty;
+        document.getElementById('poids').required = isOneNotEmpty;
+        document.getElementById('complexite').required = isOneNotEmpty;
+        document.getElementById('requetes').required = isOneNotEmpty;
+    });
+    
+    ecoIndexElements[i].addEventListener('input', function() {
+        var isEverythingEmpty = isEveythingEmpty('ecoIndex');
+        if(isEverythingEmpty){
+            document.getElementById('score_ecoindex').required = false;
+            document.getElementById('poids').required = false;
+            document.getElementById('complexite').required = false;
+            document.getElementById('requetes').required = false;
+        }
+    });
+}
+
+
 document.getElementById('form').addEventListener('submit', function(event) {
-    var isScoreEcoindexEmpty = document.getElementById('score_ecoindex').value == '' || document.getElementById('score_ecoindex').value == null;
-    var isPoidsEmpty = document.getElementById('poids').value == '' || document.getElementById('poids').value == null;
-    var isComplexiteEmpty = document.getElementById('complexite').value == '' || document.getElementById('complexite').value == null;
-    var isRequetesEmpty = document.getElementById('requetes').value == '' || document.getElementById('requetes').value == null;
-    var isGtmetrixEmpty = document.getElementById('score_gtmetrix').value == '' || document.getElementById('gtmetrix').value == null;
-
-    if (isScoreEcoindexEmpty && isPoidsEmpty && isComplexiteEmpty && isRequetesEmpty && isGtmetrixEmpty) {
+    if (isEveythingEmpty('ecoIndex') && isEveythingEmpty('GTmetrix')) {
         alert('Veuillez remplir au moins un champ');
         event.preventDefault();
     }
 });
-
-
-
-/*gtmetrixSection.querySelectorAll('input').forEach(input => {
-    input.addEventListener('input', () => {
-        // Rendez les autres champs de cette section obligatoires
-        gtmetrixSection.querySelectorAll('input').forEach(otherInput => {
-            if (otherInput !== input) {
-                otherInput.required = true;
-            }
-        });
-    });
-});
-
-*/
