@@ -40,9 +40,31 @@ for (var i = 0; i < ecoIndexElements.length; i++) {
     });
 }
 
+var ecoIndexElements = document.getElementsByClassName('pageSpeed');
+for (var i = 0; i < pageSpeedElements.length; i++) {
+
+    ecoIndexElements[i].addEventListener('input', function() {
+        var isOneNotEmpty = isOneElementOfTheClassIsNotEmpty('pageSpeed');
+        document.getElementById('score_ecoindex').required = isOneNotEmpty;
+        document.getElementById('poids').required = isOneNotEmpty;
+        document.getElementById('complexite').required = isOneNotEmpty;
+        document.getElementById('requetes').required = isOneNotEmpty;
+    });
+    
+    ecoIndexElements[i].addEventListener('input', function() {
+        var isEverythingEmpty = isEveythingEmpty('pageSpeed');
+        if(isEverythingEmpty){
+            document.getElementById('performances').required = false;
+            document.getElementById('accessibilite').required = false;
+            document.getElementById('bonnes_pratique').required = false;
+            document.getElementById('SEO').required = false;
+        }
+    });
+}
+
 
 document.getElementById('form').addEventListener('submit', function(event) {
-    if (isEveythingEmpty('ecoIndex') && isEveythingEmpty('GTmetrix')) {
+    if (isEveythingEmpty('ecoIndex') && isEveythingEmpty('pageSpeed')) {
         alert('Veuillez remplir au moins un champ');
         event.preventDefault();
     }
