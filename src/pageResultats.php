@@ -189,7 +189,7 @@ if ($performances!== null) {
     <script src="menu-toggle.js"></script>
     <main>
         <section>
-            <?php if ($score_ecoindex !== null): ?>
+            <?php if ($score_ecoindex !== 0): ?>
         <h2>Résultats Écoindex</h2>
         <article>
             <h3>Votre score Écoindex :</h3>
@@ -214,7 +214,7 @@ if ($performances!== null) {
         </section>
 
         <section>
-        <?php if ($score_speedpages !== null): ?>
+        <?php if ($performances !== 0): ?>
         <h2>Résultats Speedpages</h2>
         <article>
             <h3>Votre score Speedpages :</h3>
