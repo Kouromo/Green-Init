@@ -91,6 +91,17 @@ article {
 
 }
 
+.scores {
+    color: #006400; /* Couleur de texte vert foncé */
+    font-size: 22px; /* Taille de police légèrement plus grande */
+    font-weight: bold; /* Texte en gras */
+    background-color: #E0EEE0; /* Arrière-plan vert très clair */
+    padding: 10px; /* Espacement intérieur pour donner de l'espace au texte */
+    border-radius: 30px; /* Coins arrondis pour un aspect plus doux */
+    width: 30%; /* Largeur réduite à 80% de la largeur de la page */
+    margin: 0 auto; /* Marges automatiques pour centrer l'élément */
+}
+
 .bouton-vert {
     background-color: green;
     color: white;
