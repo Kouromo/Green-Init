@@ -8,13 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $requetes = $_POST['requetes'];
 }
 
+
 $performances = $accessibilite = $bonnes_pratique = $SEO = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $performances = $_POST['performances'];
     $accessibilite = $_POST['accessibilite'];
     $bonnes_pratique = $_POST['bonnes_pratique'];
-    $SEO = $_POST['SEO'];
+    $seo = $_POST['SEO'];
 }
 
 // Textes personnalisés en fonction des valeurs reçues
@@ -150,7 +151,7 @@ if ($performances!== null) {
     }
 
         $texte_seo = "";
-    if ($seo >= 90) {
+    if ($SEO >= 90) {
         $texte_seo = "Bravo ! Votre site atteint un niveau élevé en termes de référencement. Pour maintenir cette performance, vous pouvez envisager ces stratégies :
         - Continuez à produire un contenu de qualité et à l'optimiser pour les mots-clés pertinents dans votre niche.
         - Améliorez l'expérience utilisateur en rendant votre site rapide, mobile-friendly et facile à naviguer.
@@ -188,7 +189,7 @@ if ($performances!== null) {
     <script src="menu-toggle.js"></script>
     <main>
         <section>
-            <?php if ($score_ecoindex !== 0): ?>
+            <?php if ($score_ecoindex !== "" && $score_ecoindex !== null): ?>
         <h2>Résultats Écoindex</h2>
         <article>
             <h3>Votre score Écoindex :</h3>
@@ -213,12 +214,8 @@ if ($performances!== null) {
         </section>
 
         <section>
-        <?php if ($performances !== 0): ?>
+        <?php if ($performances !== "" && $performances !== null): ?>
         <h2>Résultats Speedpages</h2>
-        <article>
-            <h3>Votre score Speedpages :</h3>
-            <p><?php echo $score_speedpages; ?></p>
-        </article>
         <article>
             <h3>Performances de votre site :</h3>
             <p><?php echo $performances; ?></p>
@@ -236,8 +233,8 @@ if ($performances!== null) {
         </article>
         <article>
             <h3>SEO de votre site :</h3>
-            <p><?php echo $SEO; ?></p>
-            <p><?php echo $texte_SEO; ?></p>
+            <p><?php echo $seo; ?></p>
+            <p><?php echo $texte_seo; ?></p>
         </article>
          <?php endif; ?>
 
