@@ -8,13 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $requetes = $_POST['requetes'];
 }
 
-$performances = $accessibilite = $bonnes_pratique = $SEO = "";
+$performances = $accessibilite = $bonnes_pratiques = $seo = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $performances = $_POST['performances'];
     $accessibilite = $_POST['accessibilite'];
     $bonnes_pratique = $_POST['bonnes_pratique'];
-    $SEO = $_POST['SEO'];
+    $seo = $_POST['SEO'];
 }
 
 // Textes personnalisés en fonction des valeurs reçues
@@ -25,7 +25,8 @@ $texte_poids = "";
 if ($poids < 1) {
     $texte_poids = "Bravo ! Votre site web est bien plus léger que la moyenne. Cependant, pour maintenir cette performance, vous pouvez encore optimiser son poids en suivant ces conseils :
     - Choisissez des formats d'image exclusifs au web, tels que JPEG ou WebP.
-    - Supprimez les scripts et les plugins non essentiels qui peuvent alourdir la charge de la page.";
+    - Limitez l'utilisation de fichiers JavaScript et CSS externes, et minifiez-les si nécessaire.
+    - Supprimez les scripts et les plugins non essentiels qui peuvent alourdir la charge de la page."; 
 } elseif ($poids >= 1 && $poids < 1.5) {
     $texte_poids = "Votre site a un poids léger à moyen. Pour améliorer encore son optimisation, vous pouvez envisager les actions suivantes :
     - Optimisez vos images en comprimant davantage les fichiers et en réduisant leur taille.
