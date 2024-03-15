@@ -25,7 +25,6 @@ $texte_poids = "";
 if ($poids < 1) {
     $texte_poids = "Bravo ! Votre site web est bien plus léger que la moyenne. Cependant, pour maintenir cette performance, vous pouvez encore optimiser son poids en suivant ces conseils :
     - Choisissez des formats d'image exclusifs au web, tels que JPEG ou WebP.
-    - Limitez l'utilisation de fichiers JavaScript et CSS externes, et minifiez-les si nécessaire.
     - Supprimez les scripts et les plugins non essentiels qui peuvent alourdir la charge de la page.";
 } elseif ($poids >= 1 && $poids < 1.5) {
     $texte_poids = "Votre site a un poids léger à moyen. Pour améliorer encore son optimisation, vous pouvez envisager les actions suivantes :
@@ -189,7 +188,7 @@ if ($performances!== null) {
     <script src="menu-toggle.js"></script>
     <main>
         <section>
-            <?php if ($score_ecoindex !== null): ?>
+            <?php if ($score_ecoindex !== 0): ?>
         <h2>Résultats Écoindex</h2>
         <article>
             <h3>Votre score Écoindex :</h3>
@@ -214,7 +213,7 @@ if ($performances!== null) {
         </section>
 
         <section>
-        <?php if ($score_speedpages !== null): ?>
+        <?php if ($performances !== 0): ?>
         <h2>Résultats Speedpages</h2>
         <article>
             <h3>Votre score Speedpages :</h3>
