@@ -1,5 +1,10 @@
 //************  Functions utilities
-
+/**
+ * 
+ * @param className  
+ * @returns Boolean
+ * @description Check if at least one element of the section is not empty
+ */
 function isOneElementOfTheClassIsNotEmpty(className) {
     var elements = document.getElementsByClassName(className);
     for (var i = 0; i < elements.length; i++)
@@ -8,6 +13,12 @@ function isOneElementOfTheClassIsNotEmpty(className) {
     return false;
 }
 
+/**
+ * 
+ * @param {*} className 
+ * @returns Boolean
+ * @description Check if all elements of the section are empty
+ */
 function isEveythingEmpty(className) {
     var elements = document.getElementsByClassName(className);
     for (var i = 0; i < elements.length; i++)

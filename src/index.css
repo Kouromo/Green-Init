@@ -32,6 +32,7 @@
     background-color: #fff;
 }
 
+/*SMALL SCREENS*/
 @media screen and (max-width: 768px) {
     .partnerContent {
         flex-direction: column;
@@ -55,6 +56,7 @@
     }
 }
 
+/*BIG SCREENS*/
 @media screen and (min-width: 769px) {
     .imgContent {
         width: 300px;

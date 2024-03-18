@@ -64,6 +64,7 @@
         <?php include 'footer.php'; ?>
         <script src="required.js"></script>
         <script>
+            // Tooltip
             tippy('#score_ecoindex', {
                 content: 'Score global sur 100'
             });
