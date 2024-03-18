@@ -253,27 +253,35 @@ if ($performances !== null)
                     <article>
                         <h3>Votre score Écoindex :</h3>
                         <br>
-                        <?php echo wrapInParagraph($score_ecoindex, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($score_ecoindex, true); ?>
+                        </div>
                         <br>
                     </article>
                     <article>
                         <h3>Le poids de votre site :</h3>
                         <br>
-                        <?php echo wrapInParagraph($poids, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($poids, true); ?>
+                        </div>
                         <br>
                         <?php echo wrapInParagraph($texte_poids); ?>
                     </article>
                     <article>
                         <h3>La complexité de votre site :</h3>
                         <br>
-                        <?php echo wrapInParagraph($complexite, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($complexite, true); ?>
+                        </div>
                         <br>
                         <?php echo wrapInParagraph($texte_complexite); ?>
                     </article>
                     <article>
                         <h3>Le nombre de requêtes :</h3>
                         <br>
-                        <?php echo wrapInParagraph($requetes, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($requetes, true); ?>
+                        </div>
                         <br><br>
                         <?php echo wrapInParagraph($texte_requetes); ?>
                     </article>
@@ -286,28 +294,36 @@ if ($performances !== null)
                     <article>
                         <h3>Performances de votre site :</h3>
                         <br>
-                        <?php echo wrapInParagraph($performances, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($performances, true); ?>
+                        </div>
                         <br>
                         <?php echo wrapInParagraph($texte_performances); ?>
                     </article>
                     <article>
                         <h3>Accessibilité de votre site :</h3>
                         <br>
-                        <?php echo wrapInParagraph($accessibilite, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($accessibilite, true); ?>
+                        </div>
                         <br>
                         <?php echo wrapInParagraph($texte_accessibilite); ?>
                     </article>
                     <article>
                         <h3>Bonnes pratiques de votre site :</h3>
                         <br>
-                        <?php echo wrapInParagraph($bonnes_pratiques, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($bonnes_pratiques, true); ?>
+                        </div>
                         <br>
                         <?php echo wrapInParagraph($texte_bonnes_pratiques); ?>
                     </article>
                     <article>
                         <h3>SEO de votre site :</h3>
                         <br>
-                        <?php echo wrapInParagraph($seo, true); ?>
+                        <div class="scoreContent">
+                            <?php echo wrapInParagraph($seo, true); ?>
+                        </div>
                         <br>
                         <?php echo wrapInParagraph($texte_seo); ?>
                     </article>
