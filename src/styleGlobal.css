@@ -62,10 +62,7 @@ h1 {
     font-size: 54px;
 }
 
-h2 {
-    font-size: 32px;
-    margin: 20px 0px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -110,16 +107,36 @@ article {
     background-color: darkgreen;
 }
 
-
+/*BIG SCREENS*/
 @media screen and (min-width: 769px) {
     main {
         margin: 50px 60px;
+    }
+
+    .scores {
+        font-size: 1.5em;
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px 40px;
+    }
+
+    .scoreContent {
+        width: 10%;
+        min-width: 150px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 20px 0px;
     }
 }
 
 
 
-/*style écran plus petit*/
+/*Small screen*/
 @media screen and (max-width: 768px) {
 
     h1{font-size: 32px;}
@@ -132,6 +149,15 @@ article {
         margin: 20px;
     }
 
+    .scores {
+        font-size: 1.5em;
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+    }
 }
 
 hr {
