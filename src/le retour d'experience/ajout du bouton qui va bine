@@ -1,0 +1,37 @@
+   <script>
+    // Fonction pour rediriger vers la page de modification avec l'ID de l'article
+    function modifierArticle(articleId) {
+        window.location.href = 'modifier_article.php?id=' + articleId;
+    }
+</script>
+<script>
+function supprimerArticle(articleId) {
+    if (confirm("Êtes-vous sûr de vouloir supprimer cet article ?")) {
+        // Utilisez une requête AJAX pour envoyer l'ID de l'article au script de traitement
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "traitement_suppression_article.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Traitez la réponse, par exemple, actualisez la page
+                if (xhr.responseText === "OK") {
+                    window.location.reload();
+                } else {
+                    alert("Erreur lors de la suppression de l'article.");
+                }
+            }
+        };
+        xhr.send("article_id=" + articleId);
+    }
+}
+</script>
+
+
+
+
+
+<?php
+if (isset($_SESSION['utilisateur_connecte'])) {
+echo ' <a href="ajouter_article.php" class="bouton-ajouter-article">Ajouter un article</a>';
+}
+?>
