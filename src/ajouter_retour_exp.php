@@ -7,8 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header.css">
-    <script src="https://cdn.tiny.cloud/1/4fe7sm9ec2b752pkfn9gl3rzjkg7m7otrnp5frpsezwurdvj/tinymce/6/tinymce.min.js"
-        referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/rkuvwlj7ckswfkwb5pee3gh9p7anwlxhdkbrkhbg5mqrvyhc/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
 <body>

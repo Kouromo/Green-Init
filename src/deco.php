@@ -9,6 +9,6 @@ if (isset($_SESSION['utilisateur_connecte'])) {
 }
 
 // Rediriger l'utilisateur vers la page d'accueil ou une autre page après la déconnexion
-header("Location: ../index.php");
+header("Location: index.php");
 exit();
 ?>

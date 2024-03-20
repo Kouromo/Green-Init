@@ -1,9 +1,9 @@
 <?php
 try {
-    $host = "localhost"; // Adresse du serveur de la base de données
-    $dbname = "europe"; // Nom de la base de données
-    $user = "europe"; // Nom d'utilisateur de la base de données
-    $password = "Eh6W5IwssLQfHL0N"; // Mot de passe de la base de données
+    $host = "mysql-kouromo.alwaysdata.net"; // Adresse du serveur de la base de données
+    $dbname = "kouromo_greeninit_retourexp"; // Nom de la base de données
+    $user = "kouromo"; // Nom d'utilisateur de la base de données
+    $password = "s'il-vous-plait-aidez-moi"; // Mot de passe de la base de données
 
     // Options de connexion PDO
     $options = array(
