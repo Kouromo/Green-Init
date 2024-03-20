@@ -18,8 +18,9 @@
     <main>
 
         <?php
-        if (isset ($_SESSION['utilisateur_connecte'])) {
-            echo '<a href="ajouter_retour_exp.php" class="bouton-ajouter-reExp">Ajouter un reExp</a>';
+        session_start();
+        if (isset ($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte']) {
+            echo "<a href='ajouter_retour_exp.php' class='bouton-ajouter-reExp'>Ajouter un reExp</a>";
         }
         ?>
         <section>

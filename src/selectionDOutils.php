@@ -15,7 +15,7 @@
 		<?php include 'header.php'; ?>
 		<script src="menu-toggle.js"></script>
 		<main>
-			<h1>Outils pour s'autoévaluer</h1>
+			<h1>Notre sélection d'outils pour s'autoévaluer</h1>
 			<form>
 				<article>
 					<h2>Éco-index</h2>
@@ -55,25 +55,16 @@
 				</article>
 				<hr>
 				<article>
-					<h2>Website Carbon Calculator</h2>
-					<p>
-						Outil en anglais calculant les émissions de CO2 à chaque fois qu'une page es chargée. Il positionne aussi votre site web par rapport aux autres sites et lui accorde
-						une note. Website Carbon Calculator indique aussi si l'hébergement utilisé pour le site utilise de l'énergie durable.
-					</p>
-					<a href="https://www.websitecarbon.com/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Website Carbon Calculator">Ecodiag</a>
-				</article>
-				<hr>
-				<article>
 					<h2>Green Web Foundation</h2>
 					<p>
 						 Encore un outil en anglais, celui-ci indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
 						 est hébergé Green, à intégrer à votre site.
 					</p>
-					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Ecodiag</a>
+					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation<</a>
 				</article>
 				<hr>
 				<div class="bouton-result">
-					<a href="comprendreSesResultats.php"><input class="bouton-vert" type="button" value="Tester son site"/></a>
+					<a href="notreOutilGreeninit.php"><input class="bouton-vert" type="button" value="Tester son site"/></a>
 				</div>
 			</form>
 		</main>

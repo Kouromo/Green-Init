@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="footer.css">
-        <title>Green Init</title>
+        <title>Green init</title>
         <script src="matomo.js"></script>
     </head>
     <body>
@@ -16,7 +16,7 @@
         <script src="menu-toggle.js"></script>
         <main>
             <section>
-                <h1>Green Init</h1>
+                <h1>Green init</h1>
                 <article>
                     <h2>Le projet 🍃</h2>
                     <p>
