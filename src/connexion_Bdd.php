@@ -2,7 +2,7 @@
 try {
     $host = "mysql-kouromo.alwaysdata.net"; // Adresse du serveur de la base de données
     $dbname = "kouromo_greeninit_retourexp"; // Nom de la base de données
-    $user = "kouromo_connect "; // Nom d'utilisateur de la base de données
+    $user = "kouromo_connect"; // Nom d'utilisateur de la base de données
     $password = "43&i4zqYX$th"; // Mot de passe de la base de données
 
     // Options de connexion PDO
