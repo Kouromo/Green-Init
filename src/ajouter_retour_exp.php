@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<?php include 'header.php'; ?>
 <html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header.css">
     <script src="https://cdn.tiny.cloud/1/rkuvwlj7ckswfkwb5pee3gh9p7anwlxhdkbrkhbg5mqrvyhc/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
-
 <body>
+    <?php include 'header.php'; ?>
     <script src="menu-toggle.js"></script>
     <main>
         <?php
         // Vérifiez si l'utilisateur est connecté
+        session_start();
         if (isset ($_SESSION['utilisateur_connecte'])) {
             // L'utilisateur est connecté, affichez le formulaire d'ajout d'articles
             echo '<h2>Ajouter un article</h2>';

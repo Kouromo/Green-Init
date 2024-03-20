@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styleGlobal.css"/>
         <link rel="stylesheet" href="header.css"/>
         <link rel="stylesheet" href="footer.css"/>
-        <link rel="stylesheet" href="comprendreSesResultats.css"/>
+        <link rel="stylesheet" href="notreOutilGreeninit.css"/>
         <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
         <title>Compendre ses résultats</title>
         <script src="matomo.js"></script>
