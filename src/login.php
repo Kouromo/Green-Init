@@ -15,30 +15,51 @@
 require_once('connexion_Bdd.php');
 
 session_start();
-// Récupérer les données du formulaire
-$username = $_POST['username'];
-$password = $_POST['password'];
+if(isset($_POST['username'], $_POST['password']))
+{
+    // Récupérer les données du formulaire
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    
+    // Préparation de la requête avec des paramètres nommés
+    $query = "SELECT * FROM utilisateur WHERE nom_utilisateur = :username";
+    $stmt = $connexion->prepare($query);
+    
+    // Liaison des paramètres
+    $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 
-// Préparation de la requête avec des paramètres nommés
-$query = "SELECT * FROM utilisateur WHERE nom_utilisateur = :username AND mdp = :password";
-$stmt = $connexion->prepare($query);
+    //$stmt->bindParam(':password', $password, PDO::PARAM_STR);
+    // Exécution de la requête préparée
+    $stmt->execute();
 
-// Liaison des paramètres
-$stmt->bindParam(':username', $username, PDO::PARAM_STR);
-$stmt->bindParam(':password', $password, PDO::PARAM_STR);
+    
+    // Vérification du résultat
+    if ($stmt->rowCount() == 1)
+    {
+        // Récupère le mot de passe haché
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $hash = $row['mot_de_passe'];
+        if(password_verify($password, $hash))
+        {
+            // L'utilisateur est authentifié avec succès
+            // Après une authentification réussie
+            $_SESSION['utilisateur_connecte'] = true;
+            echo "authentification réusie";
+            //header("Location: ../fr/indexFR.php");
+        }
+        else
+        {
+            // L'authentification a échoué
+            echo "Mot de passe incorrect.";
+        
+        }
+    }
+    else
+    {
+        // L'authentification a échoué
+        echo "Nom d'utilisateur incorrect.";
+    }
 
-// Exécution de la requête préparée
-$stmt->execute();
-
-// Vérification du résultat
-if ($stmt->rowCount() > 0) {
-    // L'utilisateur est authentifié avec succès
-    // Après une authentification réussie
-    $_SESSION['utilisateur_connecte'] = true;
-    header("Location: ../fr/indexFR.php");
-} else {
-    // L'authentification a échoué
-    echo "Nom d'utilisateur ou mot de passe incorrect.";
 }
 
 
