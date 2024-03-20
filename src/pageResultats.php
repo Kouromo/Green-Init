@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $poids = $_POST['poids'];
     $complexite = $_POST['complexite'];
     $requetes = $_POST['requetes'];
+
     $performances = $_POST['performances'];
     $accessibilite = $_POST['accessibilite'];
     $bonnes_pratiques = $_POST['bonnes_pratique'];
