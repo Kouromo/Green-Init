@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="styleAutoevaluation.css">
 		<link rel="stylesheet" href="header.css">
 		<link rel="stylesheet" href="footer.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,-25" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 		<title>Pages d'outils pour s'auto-diagnostiquer</title>
 		<script src="matomo.js"></script>
 	</head>
@@ -25,7 +25,7 @@
 						Quelques mesures sur l'empreinte environnementale sont données pour pouvoir donner à l'utilisateur.rice une idée de la consommation des ressources de sa page. 
 						Le projet est en open source et est amélioré par ses contributeurs. 
 					</p>
-					<a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks" aria-label="lien vers le site éco-index">Éco-index <i class="material-symbols-outlined">open_in_new</i></a>
+					<a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks" aria-label="lien vers le site éco-index">Éco-index <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<article>
@@ -34,7 +34,7 @@
 						Service en ligne permettant de connaitre la vitesse de chargement des pages, grâce à un système de note allant de A à G et de pourcentage d'efficacité permettant 
 						de savoir si le site est performant ainsi que de donner quelques pistes d'amélioration pour améliorer les performances qui sont fortement liée aux critère NR.
 					</p>
-					<a href="https://gtmetrix.com/" target="_blank" class="bigLinks" aria-label="lien vers le site GTmetrix">GTmetrix <i class="material-symbols-outlined">open_in_new</i></a>
+					<a href="https://gtmetrix.com/" target="_blank" class="bigLinks" aria-label="lien vers le site GTmetrix">GTmetrix <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<article>
@@ -43,7 +43,7 @@
 						WAVE® est une suite d'outils d'évaluation qui aide les site Web plus accessible aux personnes handicapées. WAVE peut identifier de nombreuses erreurs d'accessibilité 
 						et des lignes directrices pour l'accessibilité du contenu, mais facilite également l'évaluation humaine du contenu Web.
 					</p>
-					<a href="https://wave.webaim.org/" target="_blank" class="bigLinks" aria-label="lien vers le site Wave">Wave <i class="material-symbols-outlined">open_in_new</i></a>
+					<a href="https://wave.webaim.org/" target="_blank" class="bigLinks" aria-label="lien vers le site Wave">Wave <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<article>
@@ -52,7 +52,7 @@
 						Ici, nous nous éloignons de votre site web pour mesurer le bilan carbonne de votre structure. Ecodiag permet, à partir d'un inventaire des équipements informatiques 
 						sur un périmètre donné, de calculer le bilan carbone d'une année. 
 					</p>
-					<a href="https://ecoinfo.cnrs.fr/ecodiag-calcul/" target="_blank" class="bigLinks" aria-label="lien vers l'outil Ecodiag sur le site EcoInfo">Ecodiag <i class="material-symbols-outlined">open_in_new</i></a>
+					<a href="https://ecoinfo.cnrs.fr/ecodiag-calcul/" target="_blank" class="bigLinks" aria-label="lien vers l'outil Ecodiag sur le site EcoInfo">Ecodiag <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<article>
@@ -61,7 +61,7 @@
 						 Encore un outil en anglais, celui-ci indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
 						 est hébergé Green, à intégrer à votre site.
 					</p>
-					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation <i class="material-symbols-outlined">open_in_new</i></a>
+					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<div class="bouton-result">
