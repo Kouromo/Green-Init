@@ -15,7 +15,7 @@
         <?php include 'header.php'; ?>
         <script src="menu-toggle.js"></script>    
         <main>
-            <h1>Le numérique responsable quésaco</h1><br>
+            <h1>Le numérique responsable quèsaco</h1><br>
             <section>
                 <p class="justifiedParagraph">
                     Le numérique responsable est une démarche d'amélioration qui vise à réduire l'empreinte écologique et sociale du numérique. 
