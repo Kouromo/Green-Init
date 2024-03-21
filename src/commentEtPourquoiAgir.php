@@ -16,15 +16,14 @@
     <?php include 'header.php'; ?>
     <script src="menu-toggle.js"></script>
     <main>
-
+        <section>
+            <h1>Comment et pourquoi agir à mon niveau ?</h1>
         <?php
         session_start();
         if (isset ($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte']) {
-            echo "<a href='ajouter_retour_exp.php' class='bouton-ajouter-reExp'>Ajouter un reExp</a>";
+            echo "<a href='ajouter_retour_exp.php' class='bouton-vert'>Ajouter un reExp</a>";
         }
         ?>
-        <section>
-            <h1>Comment et pourquoi agir à mon niveau ?</h1>
             <article>
                 <h2 id="associationAgir">Association</h2>
                 <p class="justifiedParagraph">
