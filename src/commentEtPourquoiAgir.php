@@ -12,8 +12,8 @@
     <script src="matomo.js"></script>
 </head>
 <?php
-require_once ('connexion_Bdd.php');
 session_start();
+require_once ('connexion_Bdd.php');
 $query = "SELECT * FROM retourExperience GROUP BY id DESC";
 $result = $connexion->query($query);
 if ($result) {
@@ -67,7 +67,7 @@ if ($result) {
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         echo '<div class="image-container">';
-                        echo '<img class="article-image" src="' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
@@ -105,7 +105,7 @@ if ($result) {
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         echo '<div class="image-container">';
-                        echo '<img class="article-image" src="' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
@@ -144,7 +144,7 @@ if ($result) {
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         echo '<div class="image-container">';
-                        echo '<img class="article-image" src="' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
