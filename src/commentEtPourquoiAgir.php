@@ -12,8 +12,8 @@
     <script src="matomo.js"></script>
 </head>
 <?php
-require_once ('connexion_Bdd.php');
 session_start();
+require_once ('connexion_Bdd.php');
 $query = "SELECT * FROM retourExperience GROUP BY id DESC";
 $result = $connexion->query($query);
 if ($result) {
@@ -33,7 +33,7 @@ if ($result) {
         <section>
             <h1>Comment et pourquoi agir à mon niveau ?</h1>
             <?php
-            session_start();
+
             if (isset ($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte']) {
                 echo "<a href='ajouter_retour_exp.php' class='bouton-vert'>Ajouter un reExp</a>";
             }
@@ -65,9 +65,10 @@ if ($result) {
                         $contenu = $row['contenuRetourExp'];
 
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         echo '<div class="image-container">';
-                        echo '<img class="article-image" src="' . $row['media_url'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
@@ -102,9 +103,10 @@ if ($result) {
                         $contenu = $row['contenuRetourExp'];
 
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         echo '<div class="image-container">';
-                        echo '<img class="article-image" src="' . $row['media_url'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
@@ -140,9 +142,10 @@ if ($result) {
                         $contenu = $row['contenuRetourExp'];
 
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         echo '<div class="image-container">';
-                        echo '<img class="article-image" src="' . $row['media_url'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
