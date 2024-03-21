@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleGlobal.css">
+    <link rel="stylesheet" href="styleCommentEtPourquoiEtAgir.css">
     <link rel="icon" href="\img\logo.png" />
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
@@ -52,13 +53,14 @@ if ($result) {
                 </p>
             </article>
             <?php
-
+            
             // Si la variable de session row_count existe et est supérieure à 0
             if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
                 // Boucle à travers les données stockées dans la variable de session retour_experience_data
                 foreach ($_SESSION['retour_experience_data'] as $row) {
                     // Vérifie si le type est "Association"
                     if ($row["type"] == "Association") {
+                        echo '<article class="reExp">';
                         echo '<div class="article">';
                         $titre = $row['objetRetourExp'];
                         $contenu = $row['contenuRetourExp'];
@@ -71,6 +73,7 @@ if ($result) {
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
+                        echo '</article>';
                     }
                 }
             }
@@ -97,6 +100,7 @@ if ($result) {
                 foreach ($_SESSION['retour_experience_data'] as $row) {
                     // Vérifie si le type est "Association"
                     if ($row["type"] == "Collectivité") {
+                        echo '<article class="reExp">';
                         echo '<div class="article">';
                         $titre = $row['objetRetourExp'];
                         $contenu = $row['contenuRetourExp'];
@@ -109,6 +113,7 @@ if ($result) {
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
+                        echo '</article>';
                     }
                 }
             }
@@ -136,6 +141,7 @@ if ($result) {
                 foreach ($_SESSION['retour_experience_data'] as $row) {
                     // Vérifie si le type est "Association"
                     if ($row["type"] == "TPE") {
+                        echo '<article class="reExp">';
                         echo '<div class="article">';
                         $titre = $row['objetRetourExp'];
                         $contenu = $row['contenuRetourExp'];
@@ -148,6 +154,7 @@ if ($result) {
                         echo '<br>';
                         echo '</div>';
                         echo '</div>'; // Fermer la div article
+                        echo '</article>';
                     }
                 }
             }
