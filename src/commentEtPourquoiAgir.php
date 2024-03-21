@@ -11,6 +11,20 @@
     <title>Comment et pourquoi agir ?</title>
     <script src="matomo.js"></script>
 </head>
+<?php
+require_once ('connexion_Bdd.php');
+session_start();
+$query = "SELECT * FROM retourExperience GROUP BY id DESC";
+$result = $connexion->query($query);
+if ($result) {
+    // Stockage du nombre de lignes retournées dans une variable de session
+    $_SESSION['row_count'] = $result->rowCount();
+
+    // Stockage des données elles-mêmes dans une variable de session
+    $_SESSION['retour_experience_data'] = $result->fetchAll(PDO::FETCH_ASSOC);
+}
+?>
+
 
 <body>
     <?php include 'header.php'; ?>
@@ -18,12 +32,12 @@
     <main>
         <section>
             <h1>Comment et pourquoi agir à mon niveau ?</h1>
-        <?php
-        session_start();
-        if (isset ($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte']) {
-            echo "<a href='ajouter_retour_exp.php' class='bouton-vert'>Ajouter un reExp</a>";
-        }
-        ?>
+            <?php
+            session_start();
+            if (isset ($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte']) {
+                echo "<a href='ajouter_retour_exp.php' class='bouton-vert'>Ajouter un reExp</a>";
+            }
+            ?>
             <article>
                 <h2 id="associationAgir">Association</h2>
                 <p class="justifiedParagraph">
@@ -38,6 +52,30 @@
                     association un modèle de durabilité numérique.
                 </p>
             </article>
+            <?php
+
+            // Si la variable de session row_count existe et est supérieure à 0
+            if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
+                // Boucle à travers les données stockées dans la variable de session retour_experience_data
+                foreach ($_SESSION['retour_experience_data'] as $row) {
+                    // Vérifie si le type est "Association"
+                    if ($row["type"] == "Association") {
+                        echo '<div class="article">';
+                        $titre = $row['objetRetourExp'];
+                        $contenu = $row['contenuRetourExp'];
+
+                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+
+                        echo '<div class="image-container">';
+                        echo '<img class="article-image" src="' . $row['media_url'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<br>';
+                        echo '</div>';
+                        echo '</div>'; // Fermer la div article
+                    }
+                }
+            }
+            ?>
+
             <article>
                 <h2 id="collectiviteAgir">Collectivité</h2>
                 <p class="justifiedParagraph">
@@ -51,6 +89,29 @@
                     clic compte pour un avenir durable.
                 </p>
             </article>
+            <?php
+
+            // Si la variable de session row_count existe et est supérieure à 0
+            if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
+                // Boucle à travers les données stockées dans la variable de session retour_experience_data
+                foreach ($_SESSION['retour_experience_data'] as $row) {
+                    // Vérifie si le type est "Association"
+                    if ($row["type"] == "Collectivité") {
+                        echo '<div class="article">';
+                        $titre = $row['objetRetourExp'];
+                        $contenu = $row['contenuRetourExp'];
+
+                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+
+                        echo '<div class="image-container">';
+                        echo '<img class="article-image" src="' . $row['media_url'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<br>';
+                        echo '</div>';
+                        echo '</div>'; // Fermer la div article
+                    }
+                }
+            }
+            ?>
             <article>
                 <h2 id="entrepriseAgir">Entreprise</h2>
                 <p class="justifiedParagraph">
@@ -66,6 +127,29 @@
                     dans le long terme ainsi que prôner une meilleure image à vos clients.
                 </p>
             </article>
+            <?php
+
+            // Si la variable de session row_count existe et est supérieure à 0
+            if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
+                // Boucle à travers les données stockées dans la variable de session retour_experience_data
+                foreach ($_SESSION['retour_experience_data'] as $row) {
+                    // Vérifie si le type est "Association"
+                    if ($row["type"] == "TPE") {
+                        echo '<div class="article">';
+                        $titre = $row['objetRetourExp'];
+                        $contenu = $row['contenuRetourExp'];
+
+                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+
+                        echo '<div class="image-container">';
+                        echo '<img class="article-image" src="' . $row['media_url'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<br>';
+                        echo '</div>';
+                        echo '</div>'; // Fermer la div article
+                    }
+                }
+            }
+            ?>
         </section>
     </main>
     <?php include 'footer.php'; ?>
