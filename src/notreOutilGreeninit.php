@@ -20,7 +20,11 @@
             <form id="form" action="pageResultats.php" method="POST">  
                 <h1>Comprendre ses résultats</h1>
                 <br>
-                <section>
+                <p>
+                    Commencez par sélectionner les outils qui vous inéressent (les liens s'ouvrent dans une nouvelle fenêtre). Une fois sur le site de l'outil, 
+                    entrez l'url de votre service numérique et commecez un scan. Notez les résultats du scan dans les champs du formulaire appropriés. 
+                    Cliquez sur "Envoyer les résultats" pour générer votre rapport d'autoévaluation.
+                </p>
                     <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index <i class="material-icons-outlined">open_in_new</i></a></h2>
                     <br>
                     <div>

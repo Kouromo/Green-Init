@@ -17,6 +17,10 @@
 		<script src="menu-toggle.js"></script>
 		<main>
 			<h1>Notre sélection d'outils pour s'autoévaluer</h1>
+			<p>
+				Ici, l'équipe Green Init, composée d'étudiants en Informatique et d'ambassadeurs du Numérique Responsable vous a concocté une liste d'outils les plus pertinents
+				à cette date pour s'autoévaluer et avoir un maximum d'information pour vos services numériques.
+			</p>
 			<form>
 				<article>
 					<h2>Éco-index</h2>
