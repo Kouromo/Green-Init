@@ -22,12 +22,12 @@
             echo '<h2>Ajouter un article</h2>';
             echo '<form action="traitement_retour_exp.php" method="post" enctype="multipart/form-data">';
                 echo '<div>';
-                    echo '<label for="titre">Titre du retour d\'expérience : </label>';
-                    echo '<input type="text" id="titre" name="titre">';
+                    echo '<label for="titre">Titre du retour d\'expérience* : </label>';
+                    echo '<input type="text" id="titre" name="titre" required>';
                 echo '</div>';
                 echo '<div>';
-                    echo '<label for="contenu">Contenu du retour d\'expérience : </label>';
-                    echo '<textarea id="contenu" name="contenu" rows="4" style="width: 100%; height: 192px;"></textarea>';
+                    echo '<label for="contenu">Contenu du retour d\'expérience* : </label>';
+                    echo '<textarea id="contenu" name="contenu" rows="4" style="width: 100%; height: 192px;" required></textarea>';
                 echo '</div>';
                 echo '<div>';
                     echo '<label for="media_url"><i class="material-symbols-outlined">attach_file</i> Image associée</label>';
@@ -42,7 +42,7 @@
                         echo '<option value="Collectivité">Collectivité</option>';
                     echo '</select>';
                 echo '</div>';
-                
+                echo '<p>*Champs obligatoires</p>';
                 echo '<input type="submit" class="bouton-vert"value="Ajouter le retour d\'expérience">';
             echo '</form>';
             

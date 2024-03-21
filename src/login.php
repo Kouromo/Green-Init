@@ -46,7 +46,7 @@
                 if(password_verify($password, $row['mdp'])) {
                     $_SESSION['utilisateur_connecte'] = true;
                     $_SESSION['error_login'] = "";
-                    echo "Authentification réussie";
+                    echo "Authentification réussie<br><br>";
                     echo "<a href='commentEtPourquoiAgir.php' class='allLinks'>Retours d'expériences</a>";
                 } else {
                     $_SESSION['error_login'] = "Mot de passe incorrect.";
