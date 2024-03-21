@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="footer.css"/>
         <link rel="stylesheet" href="notreOutilGreeninit.css"/>
         <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
         <title>Compendre ses résultats</title>
         <script src="matomo.js"></script>
     </head>
@@ -24,8 +25,8 @@
                     entrez l'url de votre service numérique et commecez un scan. Notez les résultats du scan dans les champs du formulaire appropriés. 
                     Cliquez sur "Envoyer les résultats" pour générer votre rapport d'autoévaluation.
                 </p>
-                <section>
-                    <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index</a></h2>
+                    <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index <i class="material-icons-outlined">open_in_new</i></a></h2>
+                    <br>
                     <div>
                         <label for="score_ecoindex">Score</label>
                         <input type="number" class="ecoIndex" name="score_ecoindex" id="score_ecoindex" placeholder="Score Éco-index">
@@ -44,7 +45,7 @@
                     </div>
                 </section>
                 <section>
-                    <h2><a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks">Page speed</a></h2>
+                    <h2><a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks">Page speed <i class="material-icons-outlined">open_in_new</i></a></h2>
                     <div>
                         <label for="performances">Performances</label>
                         <input type="number" class="pageSpeed" name="performances" id="performances" placeholder="Performances" requiered="false">
