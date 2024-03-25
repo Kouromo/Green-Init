@@ -61,18 +61,19 @@ if ($result) {
                     // Vérifie si le type est "Association"
                     if ($row["type"] == "Association") {
                         echo '<article class="reExp">';
-                        echo '<div class="article">';
-                        $titre = $row['objetRetourExp'];
-                        $contenu = $row['contenuRetourExp'];
-
+                        //$titre = $row['objetRetourExp'];
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
-                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
-
                         echo '<div class="image-container">';
+                        echo '</div>';
+                        echo '<div class="article">';
                         echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
-                        echo '</div>';
+                        $contenu = $row['contenuRetourExp'];
+
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
                         echo '</div>'; // Fermer la div article
+                       
+                       
                         echo '</article>';
                     }
                 }
@@ -99,19 +100,19 @@ if ($result) {
                 // Boucle à travers les données stockées dans la variable de session retour_experience_data
                 foreach ($_SESSION['retour_experience_data'] as $row) {
                     // Vérifie si le type est "Association"
-                    if ($row["type"] == "Collectivité") {
+                    if ($row["type"] == "Collectivite") {
                         echo '<article class="reExp">';
-                        echo '<div class="article">';
-                        $titre = $row['objetRetourExp'];
-                        $contenu = $row['contenuRetourExp'];
-
+                        //$titre = $row['objetRetourExp'];
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
-                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
-
+                        echo '<div class="article">';
+                        $contenu = $row['contenuRetourExp'];
                         echo '<div class="image-container">';
                         echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
+
+                       
                         echo '</div>'; // Fermer la div article
                         echo '</article>';
                     }
@@ -142,17 +143,18 @@ if ($result) {
                     // Vérifie si le type est "Association"
                     if ($row["type"] == "TPE") {
                         echo '<article class="reExp">';
-                        echo '<div class="article">';
-                        $titre = $row['objetRetourExp'];
-                        $contenu = $row['contenuRetourExp'];
-
+                        //$titre = $row['objetRetourExp'];
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
-                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
-
+                        echo '<div class="article">';
+                        $contenu = $row['contenuRetourExp'];
                         echo '<div class="image-container">';
                         echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
                         echo '</div>';
+
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
+
+                       
                         echo '</div>'; // Fermer la div article
                         echo '</article>';
                     }

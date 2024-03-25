@@ -39,7 +39,7 @@
                     echo '<select id="categorie" name="categorie">';
                         echo '<option value="TPE">TPE</option>';
                         echo '<option value="Association">Association</option>';
-                        echo '<option value="Collectivité">Collectivité</option>';
+                        echo '<option value="Collectivite">Collectivité</option>';
                     echo '</select>';
                 echo '</div>';
                 echo '<p>*Champs obligatoires</p>';
