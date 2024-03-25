@@ -5,25 +5,43 @@ require_once('connexion_Bdd.php');
 // retourne l'image avec une largeur de 600 px
 function resize($image, $image_name)
 {
-    // Vérifiez que le fichier est une image PNG valide
-    if (mime_content_type($image) != 'image/png') {
-        throw new Exception('Le fichier n\'est pas une image PNG valide.');
+    // Obtenez les informations sur l'image
+    $image_info = getimagesize($image);
+    if ($image_info === false) {
+        throw new Exception('Le fichier n\'est pas une image valide.');
     }
 
-    // Créez une image à partir du fichier
-    $image = imagecreatefrompng($image);
+    // Créez une image à partir du fichier en fonction de son type
+    switch ($image_info[2]) {
+        case IMAGETYPE_PNG:
+            $image = imagecreatefrompng($image);
+            break;
+        case IMAGETYPE_JPEG:
+            $image = imagecreatefromjpeg($image);
+            break;
+        default:
+            throw new Exception('Le type d\'image n\'est pas pris en charge.');
+    }
+
     if ($image === false) {
         throw new Exception('Impossible de créer une image à partir du fichier.');
     }
 
     // Redimensionnez l'image
-    $new_image = imagescale($image, 600);
+    $new_image = imagescale($image, 250);
     if ($new_image === false) {
         throw new Exception('Impossible de redimensionner l\'image.');
     }
 
     // Enregistrez l'image redimensionnée
-    imagepng($new_image, $image_name);
+    switch ($image_info[2]) {
+        case IMAGETYPE_PNG:
+            imagepng($new_image, $image_name);
+            break;
+        case IMAGETYPE_JPEG:
+            imagejpeg($new_image, $image_name);
+            break;
+    }
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -55,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':image', $file_name, PDO::PARAM_STR);
         
         if ($stmt->execute()) {
-            header("Location: index.php");
+            header("Location: commentEtPourquoiAgir.php");
         } else {
             error_log("Erreur lors de l'ajout de l'article dans la base de données.");
         }
