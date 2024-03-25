@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleGlobal.css">
-    <link rel="stylesheet" href="styleCommentEtPourquoiEtAgir.css">
+    <link rel="stylesheet" href="styleCommentEtPourquoiAgir.css">
     <link rel="icon" href="\img\logo.png" />
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
