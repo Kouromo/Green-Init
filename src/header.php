@@ -14,7 +14,7 @@
                         <span class="triangle">▼</span>
                     </a>
                     <ul class="sous">
-                        <li><a href="definition.php" value="allLinks" <?php if ($current_page == 'definition.php') echo 'aria-current="page"'; ?>>C'est quoi un service numérique responsable numérique responsable ?</a></li>
+                        <li><a href="definition.php" value="allLinks" <?php if ($current_page == 'definition.php') echo 'aria-current="page"'; ?>>C'est quoi un service numérique responsable ?</a></li>
                         <li><a href="formulaire.php" value="3U" <?php if ($current_page == 'formulaire.php') echo 'aria-current="page"'; ?>>Est-ce que mon projet respecte les 3U</a></li>
                     </ul>
                 </li>
