@@ -64,6 +64,7 @@
 				<hr>
 				<article>
 					<h2> > Pour le système d’information votre organisation </h2>
+					<br>
 					<h2>EcoDiag</h2>
 					<p>
 						Ici, nous nous éloignons de votre site web pour mesurer le bilan carbonne de votre structure. Ecodiag permet, à partir d'un inventaire des équipements informatiques 
