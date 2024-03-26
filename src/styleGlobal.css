@@ -20,7 +20,7 @@ body {
 
 .allLinks {
     text-decoration: none;
-    color: lightgreen;
+    color: #90ee90;
 }
 
 .sous{
@@ -42,7 +42,7 @@ body {
 
 .sous a:hover{
     border-bottom: none;
-    background-color: rgb(111, 186, 111);
+    background-color: #6fba6f;
 }
 
 li{
