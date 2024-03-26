@@ -25,8 +25,8 @@
                     </a>
                     <ul class="sous">
                         <li><a href="commentEtPourquoiAgir.php#associationAgir" value="association" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>Association</a></li>
-                        <li><a href="commentEtPourquoiAgir.php#entrepriseAgir" value="collectivite" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>Collectivité</a></li>
-                        <li><a href="commentEtPourquoiAgir.php#collectiviteAgir" value="tpe" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>TPE</a></li>
+                        <li><a href="commentEtPourquoiAgir.php#collectiviteAgir" value="collectivite" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>Collectivité</a></li>
+                        <li><a href="commentEtPourquoiAgir.php#entrepriseAgir" value="tpe" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>TPE</a></li>
                     </ul>
                 </li>
                 <li class="MenuItem"><a href="selectionDOutils.php" class="allLinks" <?php if ($current_page == 'selectionDOutils.php') echo 'aria-current="page"'; ?>>Sélection d'outils pour s'autoévaluer</a></li>
