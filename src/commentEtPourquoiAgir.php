@@ -130,18 +130,17 @@ if ($result) {
                     if ($row["type"] == "TPE") {
                         echo '<article class="reExp">';
                         //$titre = $row['objetRetourExp'];
-                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
-                        echo '<div class="article">';
-                        $contenu = $row['contenuRetourExp'];
-                        echo '<div class="image-container">';
-                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
-                        echo '<br>';
-                        echo '</div>';
+                            echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                            echo '<div class="article">';
+                            //$contenu = $row['contenuRetourExp'];
+                            echo '<div class="image-container">';
+                                echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                                echo '<br>';
+                            echo '</div>';
+                            echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
-                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
-
-                       
-                        echo '</div>';
+                        
+                            echo '</div>';
                         echo '</article>';
                     }
                 }
