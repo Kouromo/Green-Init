@@ -36,14 +36,16 @@
 /*SMALL SCREENS*/
 @media screen and (max-width: 768px) {
 /* Styles généraux pour les téléphones */
+/* Styles généraux */
 .reExp {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .reExp h3 {
@@ -52,23 +54,22 @@
 }
 
 .reExp .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
 }
 
 .reExp .article p {
     font-size: 14px;
-}
-
-.reExp .image-container {
-    text-align: center;
+    text-align: justify;
 }
 
 .reExp .article-image {
-    max-width: 100%;
+    width: 100%; /* Utilise toute la largeur disponible */
     height: auto;
     margin-bottom: 10px;
 }
-
 
 
 }
