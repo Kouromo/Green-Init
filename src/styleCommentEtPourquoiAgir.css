@@ -33,42 +33,39 @@
     height: 100px;
     margin: -100px 0 0;
 }
-/*SMALL SCREENS*/
+
 @media screen and (max-width: 768px) {
-/* Styles généraux pour les téléphones */
-.reExp {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-}
+    .reExp {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+    }
 
-.reExp h3 {
-    font-size: 18px;
-    margin-top: 0;
-}
+    .reExp h3 {
+        font-size: 18px;
+        margin-top: 0;
+    }
 
-.reExp .article {
-    margin-top: 10px;
-}
+    .reExp .article {
+        margin-top: 10px;
+    }
 
-.reExp .article p {
-    font-size: 14px;
-}
+    .reExp .article p {
+        font-size: 14px;
+    }
 
-.reExp .image-container {
-    text-align: center;
-}
+    .reExp .image-container {
+        text-align: center;
+    }
 
-.reExp .article-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
+    .reExp .article-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
 
 }
