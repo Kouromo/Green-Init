@@ -18,10 +18,7 @@ require_once ('connexion_Bdd.php');
 $query = "SELECT * FROM retourExperience GROUP BY id DESC";
 $result = $connexion->query($query);
 if ($result) {
-    // Stockage du nombre de lignes retournées dans une variable de session
     $_SESSION['row_count'] = $result->rowCount();
-
-    // Stockage des données elles-mêmes dans une variable de session
     $_SESSION['retour_experience_data'] = $result->fetchAll(PDO::FETCH_ASSOC);
 }
 ?>
@@ -54,15 +51,12 @@ if ($result) {
             </article>
             <?php
             
-            // Si la variable de session row_count existe et est supérieure à 0
             if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
-                // Boucle à travers les données stockées dans la variable de session retour_experience_data
                 foreach ($_SESSION['retour_experience_data'] as $row) {
-                    // Vérifie si le type est "Association"
                     if ($row["type"] == "Association") {
                         echo '<article class="reExp">';
-                        //$titre = $row['objetRetourExp'];
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                        //$titre = $row['objetRetourExp'];
                         echo '<div class="image-container">';
                         echo '</div>';
                         echo '<div class="article">';
@@ -71,7 +65,7 @@ if ($result) {
                         $contenu = $row['contenuRetourExp'];
 
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
-                        echo '</div>'; // Fermer la div article
+                        echo '</div>';
                        
                        
                         echo '</article>';
@@ -95,11 +89,8 @@ if ($result) {
             </article>
             <?php
 
-            // Si la variable de session row_count existe et est supérieure à 0
             if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
-                // Boucle à travers les données stockées dans la variable de session retour_experience_data
                 foreach ($_SESSION['retour_experience_data'] as $row) {
-                    // Vérifie si le type est "Association"
                     if ($row["type"] == "Collectivite") {
                         echo '<article class="reExp">';
                         //$titre = $row['objetRetourExp'];
@@ -113,7 +104,7 @@ if ($result) {
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                        
-                        echo '</div>'; // Fermer la div article
+                        echo '</div>';
                         echo '</article>';
                     }
                 }
@@ -136,11 +127,8 @@ if ($result) {
             </article>
             <?php
 
-            // Si la variable de session row_count existe et est supérieure à 0
             if (isset ($_SESSION['row_count']) && $_SESSION['row_count'] > 0) {
-                // Boucle à travers les données stockées dans la variable de session retour_experience_data
                 foreach ($_SESSION['retour_experience_data'] as $row) {
-                    // Vérifie si le type est "Association"
                     if ($row["type"] == "TPE") {
                         echo '<article class="reExp">';
                         //$titre = $row['objetRetourExp'];
@@ -155,7 +143,7 @@ if ($result) {
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                        
-                        echo '</div>'; // Fermer la div article
+                        echo '</div>';
                         echo '</article>';
                     }
                 }
