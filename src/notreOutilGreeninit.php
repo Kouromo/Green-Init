@@ -18,7 +18,7 @@
         <script src="menu-toggle.js"></script>  
         <main>
             <form id="form" action="pageResultats.php" method="POST">  
-                <h1>Comprendre ses résultats</h1>
+                <h1>Green init facilite la compréhension des résultats d’auto-évaluation</h1>
                 <br>
                 <p>
                     Commencez par sélectionner les outils qui vous inéressent (les liens s'ouvrent dans une nouvelle fenêtre). Une fois sur le site de l'outil, 

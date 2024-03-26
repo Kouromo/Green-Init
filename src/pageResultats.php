@@ -242,7 +242,7 @@ if ($performances !== null)
         <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="footer.css">
-        <title>Résultats Écoindex</title>
+        <title>Résultats</title>
     </head>
     <body>
         <?php include 'header.php'; ?>
