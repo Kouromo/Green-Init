@@ -55,17 +55,18 @@ if ($result) {
                 foreach ($_SESSION['retour_experience_data'] as $row) {
                     if ($row["type"] == "Association") {
                         echo '<article class="reExp">';
-                            echo '<h3>' . $row['objetRetourExp'] . '</h3>';
-                            //$titre = $row['objetRetourExp'];
-                            echo '<div class="article">';
-                                echo '<div class="image-container">';
-                                    echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
-                                    echo '<br>';
-                                echo '</div>';
-                                //$contenu = $row['contenuRetourExp'];
+                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                        //$titre = $row['objetRetourExp'];
+                        echo '<div class="image-container">';
+                        echo '</div>';
+                        echo '<div class="article">';
+                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                        echo '<br>';
+                        $contenu = $row['contenuRetourExp'];
 
-                                echo '<p>' . $row['contenuRetourExp'] . '</p>';
-                            echo '</div>';
+                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
+                        echo '</div>';
+                       
                        
                         echo '</article>';
                     }
