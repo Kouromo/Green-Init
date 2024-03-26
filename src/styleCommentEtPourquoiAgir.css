@@ -47,17 +47,17 @@
     text-align: center;
 }
 
-.reExp h3 {
-    font-size: 18px;
-    margin-top: 0;
-}
+        .reExp h3 {
+            font-size: 18px;
+            margin-top: 0;
+        }
 
-.reExp .article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
+    .reExp .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
 
 .reExp .article p {
     font-size: 14px;
@@ -72,5 +72,8 @@
     margin-right: 0px;
 }
 
+    .reExp .image-container {
+        text-align: center;
+    }
 
 }
