@@ -93,18 +93,16 @@ if ($result) {
                 foreach ($_SESSION['retour_experience_data'] as $row) {
                     if ($row["type"] == "Collectivite") {
                         echo '<article class="reExp">';
-                        //$titre = $row['objetRetourExp'];
-                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
-                        echo '<div class="article">';
-                        $contenu = $row['contenuRetourExp'];
-                        echo '<div class="image-container">';
-                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
-                        echo '<br>';
-                        echo '</div>';
-                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
-
-                       
-                        echo '</div>';
+                            //$titre = $row['objetRetourExp'];
+                            echo '<h3>' . $row['objetRetourExp'] . '</h3>';
+                            echo '<div class="article">';
+                                //$contenu = $row['contenuRetourExp'];
+                                echo '<div class="image-container">';
+                                    echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                                    echo '<br>';
+                                echo '</div>';
+                                echo '<p>' . $row['contenuRetourExp'] . '</p>';
+                            echo '</div>';
                         echo '</article>';
                     }
                 }
