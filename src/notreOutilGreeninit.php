@@ -21,8 +21,8 @@
                 <h1>Green init facilite la compréhension des résultats d’auto-évaluation</h1>
                 <br>
                 <p>
-                    Commencez par sélectionner les outils qui vous inéressent (les liens s'ouvrent dans une nouvelle fenêtre). Une fois sur le site de l'outil, 
-                    entrez l'url de votre service numérique et commecez un scan. Notez les résultats du scan dans les champs du formulaire appropriés. 
+                    Commencez par sélectionner les outils qui vous intéressent (les liens s'ouvrent dans une nouvelle fenêtre). Une fois sur le site de l'outil, 
+                    entrez l'url de votre service numérique et commencez un scan. Notez les résultats du scan dans les champs du formulaire appropriés. 
                     Cliquez sur "Envoyer les résultats" pour générer votre rapport d'autoévaluation.
                 </p>
                     <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index <i class="material-icons-outlined">open_in_new</i></a></h2>
