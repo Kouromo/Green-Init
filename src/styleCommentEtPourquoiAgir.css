@@ -33,10 +33,9 @@
     height: 100px;
     margin: -100px 0 0;
 }
+
 /*SMALL SCREENS*/
 @media screen and (max-width: 768px) {
-/* Styles généraux pour les téléphones */
-/* Styles généraux */
 .reExp {
     margin-bottom: 20px;
     padding: 10px;
@@ -63,12 +62,14 @@
 .reExp .article p {
     font-size: 14px;
     text-align: justify;
+    margin-right: 0px
 }
 
 .reExp .article-image {
-    width: 100%; /* Utilise toute la largeur disponible */
+    width: 50%; 
     height: auto;
     margin-bottom: 10px;
+    margin-right: 0px;
 }
 
 
