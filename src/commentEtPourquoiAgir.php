@@ -109,10 +109,8 @@ if ($result) {
                         echo '<div class="image-container">';
                         echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
                         echo '<br>';
-                        echo '</div>';
-                        echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
-                       
+                        echo '<h3>' . $row['objetRetourExp'] . '</h3>';
                         echo '</div>'; // Fermer la div article
                         echo '</article>';
                     }
