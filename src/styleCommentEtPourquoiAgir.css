@@ -26,3 +26,10 @@
 .article-image {
     margin-right: 30px;
 }
+
+:target::before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+}
