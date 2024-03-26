@@ -85,6 +85,19 @@
             tippy('#score_gtmetrix', {
                 content: 'Score global'
             });
+
+            tippy('#performances', {
+                content: 'Performances de la page web sur 100 en version Desktop'
+            });
+            tippy('#accessibilite', {
+                content: 'Accessibilité de la page web sur 100 en version Desktop'
+            });
+            tippy('#bonnes_pratique', {
+                content: 'Bonnes pratiques de la page web sur 100 en version Desktop'
+            });
+            tippy('#SEO', {
+                content: 'SEO de la page web sur 100 en version Desktop'
+            });
         </script>
     </body>
 </html>
