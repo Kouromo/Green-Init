@@ -34,47 +34,43 @@
     margin: -100px 0 0;
 }
 
-
 /*SMALL SCREENS*/
 @media screen and (max-width: 768px) {
-    .reExp {
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.reExp {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .reExp h3 {
-        font-size: 18px;
-        margin-top: 0;
-    }
+.reExp h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
 
-    .reExp .article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
+.reExp .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
 
-    .reExp .article p {
-        font-size: 14px;
-        text-align: justify;
-        margin-right: 0px
-    }
+.reExp .article p {
+    font-size: 14px;
+    text-align: justify;
+    margin-right: 0px
+}
 
-    .reExp .article-image {
-        width: 50%; 
-        height: auto;
-        margin-bottom: 10px;
-        margin-right: 0px;
-    }
+.reExp .article-image {
+    width: 75%; 
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
 
-    .reExp .image-container {
-        text-align: center;
-    }
 
 }
