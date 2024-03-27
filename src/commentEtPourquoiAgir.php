@@ -34,6 +34,10 @@ if ($result) {
             if (isset ($_SESSION['utilisateur_connecte']) && $_SESSION['utilisateur_connecte']) {
                 echo "<a href='ajouter_retour_exp.php' class='bouton-vert'>Ajouter un reExp</a>";
             }
+            if (isset($_SESSION['insert']) && $_SESSION['insert']) {
+                echo "<p class='message'>Votre retour d'expérience a bien été ajouté.</p>";
+                unset($_SESSION['insert']);
+            }
             ?>
             <article>
                 <h2 id="associationAgir">Association</h2>
@@ -57,11 +61,14 @@ if ($result) {
                         echo '<article class="reExp">';
                         echo '<h3>' . $row['objetRetourExp'] . '</h3>';
                         //$titre = $row['objetRetourExp'];
-                        echo '<div class="image-container">';
-                        echo '</div>';
                         echo '<div class="article">';
-                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
-                        echo '<br>';
+                        if ($row['image'] != null)
+                        {
+                            echo '<div class="image-container">';
+                                echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                                echo '<br>';
+                            echo '</div>';
+                        }
                         $contenu = $row['contenuRetourExp'];
 
                         echo '<p>' . $row['contenuRetourExp'] . '</p>';
@@ -97,10 +104,13 @@ if ($result) {
                             echo '<h3>' . $row['objetRetourExp'] . '</h3>';
                             echo '<div class="article">';
                                 //$contenu = $row['contenuRetourExp'];
-                                echo '<div class="image-container">';
-                                    echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
-                                    echo '<br>';
-                                echo '</div>';
+                                if ($row['image'] != null)
+                                {
+                                    echo '<div class="image-container">';
+                                        echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                                        echo '<br>';
+                                    echo '</div>';
+                                }
                                 echo '<p>' . $row['contenuRetourExp'] . '</p>';
                             echo '</div>';
                         echo '</article>';
@@ -133,10 +143,13 @@ if ($result) {
                             echo '<h3>' . $row['objetRetourExp'] . '</h3>';
                             echo '<div class="article">';
                             //$contenu = $row['contenuRetourExp'];
-                            echo '<div class="image-container">';
-                                echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
-                                echo '<br>';
-                            echo '</div>';
+                            if ($row['image'] != null)
+                            {
+                                echo '<div class="image-container">';
+                                    echo '<img class="article-image" src="imgRetourExp/' . $row['image'] . '" alt="Image ' . $row['objetRetourExp'] . '">';
+                                    echo '<br>';
+                                echo '</div>';
+                            }
                             echo '<p>' . $row['contenuRetourExp'] . '</p>';
 
                         

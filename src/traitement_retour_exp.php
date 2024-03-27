@@ -48,14 +48,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titre = $_POST['titre'];
     $contenu = $_POST['contenu'];
     $categorie = $_POST['categorie'];
-    if(isset($_FILES['media_url']) || $_FILES['media_url'] == null) {
+    if (isset($_FILES['media_url']) && $_FILES['media_url']['size'] > 0) {
         $file_name = $_FILES['media_url']['name'];
         $extension = pathinfo($file_name, PATHINFO_EXTENSION);
         $file_tmp = $_FILES['media_url']['tmp_name'];
         $upload_dir = 'imgRetourExp/';
         $upload_path = $upload_dir . $file_name;
 
-        // If the img is superior to 600px, resize it
+        // Resize img superior to 600px
         $image_size = getimagesize($file_tmp);
         if ($image_size[0] > 600 || $image_size[1] > 600)
             resize($file_tmp, $upload_path);
@@ -73,7 +73,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':image', $file_name, PDO::PARAM_STR);
         
         if ($stmt->execute()) {
+            session_start();
+            $_SESSION['insert'] = true;
             header("Location: commentEtPourquoiAgir.php");
+
         } else {
             error_log("Erreur lors de l'ajout de l'article dans la base de données.");
         }
