@@ -82,7 +82,7 @@
             tippy('#requetes', {
                 content: 'Nombre de requêtes sur la page web'
             });
-            tippy('#score_gtmetrix', {
+            tippy('#score_pagespeed', {
                 content: 'Score global'
             });
 
