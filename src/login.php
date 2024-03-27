@@ -18,7 +18,11 @@
 
         function show_form() {
             echo "<h1>Connexion</h1>";
-            if(isset($_SESSION['error_login'])) echo "<p>" . $_SESSION['error_login'] . "</p>";
+            if(isset($_SESSION['error_login']))
+            {
+                echo "<p>" . $_SESSION['error_login'] . "</p>";
+                $_SESSION['error_login'] = "";
+            } 
             echo "
             <form method='post' action='login.php'>
                 <label for='username'>Nom d'utilisateur :</label>
