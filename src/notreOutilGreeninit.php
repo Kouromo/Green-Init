@@ -18,11 +18,11 @@
         <script src="menu-toggle.js"></script>  
         <main>
             <form id="form" action="pageResultats.php" method="POST">  
-                <h1>Comprendre ses résultats</h1>
+                <h1>Green init facilite la compréhension des résultats d’auto-évaluation</h1>
                 <br>
                 <p>
-                    Commencez par sélectionner les outils qui vous inéressent (les liens s'ouvrent dans une nouvelle fenêtre). Une fois sur le site de l'outil, 
-                    entrez l'url de votre service numérique et commecez un scan. Notez les résultats du scan dans les champs du formulaire appropriés. 
+                    Commencez par sélectionner les outils qui vous intéressent (les liens s'ouvrent dans une nouvelle fenêtre). Une fois sur le site de l'outil, 
+                    entrez l'url de votre service numérique et commencez un scan. Notez les résultats du scan dans les champs du formulaire appropriés. 
                     Cliquez sur "Envoyer les résultats" pour générer votre rapport d'autoévaluation.
                 </p>
                     <h2><a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks">Éco-index <i class="material-icons-outlined">open_in_new</i></a></h2>
@@ -82,8 +82,21 @@
             tippy('#requetes', {
                 content: 'Nombre de requêtes sur la page web'
             });
-            tippy('#score_gtmetrix', {
+            tippy('#score_pagespeed', {
                 content: 'Score global'
+            });
+
+            tippy('#performances', {
+                content: 'Performances de la page web sur 100 en version Desktop'
+            });
+            tippy('#accessibilite', {
+                content: 'Accessibilité de la page web sur 100 en version Desktop'
+            });
+            tippy('#bonnes_pratique', {
+                content: 'Bonnes pratiques de la page web sur 100 en version Desktop'
+            });
+            tippy('#SEO', {
+                content: 'SEO de la page web sur 100 en version Desktop'
             });
         </script>
     </body>

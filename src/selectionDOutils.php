@@ -16,18 +16,19 @@
 		<?php include 'header.php'; ?>
 		<script src="menu-toggle.js"></script>
 		<main>
-			<h1>Notre sélection d'outils pour s'autoévaluer</h1>
+			<h1>Notre sélection d’outils pour l’auto-évaluation</h1>
 			<p>
-				Ici, l'équipe Green Init, composée d'étudiants en Informatique et d'ambassadeurs du Numérique Responsable vous a concocté une liste d'outils les plus pertinents
-				à cette date pour s'autoévaluer et avoir un maximum d'information pour vos services numériques.
+			Notre sélection d'outils pour une première approche de l’auto-évaluation a fait le choix d’outils
+		    qui ne nécessitent pas d’installation d’application dans votre service numérique ou ordinateur ou serveur de données.
 			</p>
 			<form>
 				<article>
 					<h2>Éco-index</h2>
 					<p>
-						Service en ligne proposé par <a href="https://greenit.fr" target="_blank" class="allLinks" aria-label="lien vers le site de Green IT">GreenIT.fr</a>, il fournit une note allant de A à G et une note sur 100, ainsi que quelques conseils pour améliorer son site web. 
+					Service en ligne initié par <a href="https://greenit.fr" target="_blank" class="allLinks" aria-label="lien vers le site de Green IT">GreenIT.fr</a>, il fournit une note allant de A à G et une note sur 100, ainsi que quelques conseils pour améliorer son site web. 
 						Quelques mesures sur l'empreinte environnementale sont données pour pouvoir donner à l'utilisateur.rice une idée de la consommation des ressources de sa page. 
-						Le projet est en open source et est amélioré par ses contributeurs. 
+						Le projet est en open source et est amélioré par ses contributeurs.
+						Notre conseil : choisir les 5 pages les plus fréquentées de votre site web et tester chacune des pages 
 					</p>
 					<a href="https://www.ecoindex.fr/" target="_blank" class="bigLinks" aria-label="lien vers le site éco-index">Éco-index <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
@@ -44,28 +45,33 @@
 				<article>
 					<h2>Wave</h2>
 					<p>
-						WAVE® est une suite d'outils d'évaluation qui aide les site Web plus accessible aux personnes handicapées. WAVE peut identifier de nombreuses erreurs d'accessibilité 
+						WAVE® est une suite d'outils d'évaluation de l’accessibilité web. WAVE peut identifier de nombreuses erreurs d'accessibilité 
 						et des lignes directrices pour l'accessibilité du contenu, mais facilite également l'évaluation humaine du contenu Web.
+						Notre conseil : 
 					</p>
 					<a href="https://wave.webaim.org/" target="_blank" class="bigLinks" aria-label="lien vers le site Wave">Wave <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<article>
+					<h2>Green Web Foundation</h2>
+					<p>
+						 Outil en anglais, qui indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
+						 est hébergé Green, à intégrer à votre site.
+						 Notre conseil :
+					</p>
+					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation <i class="material-icons-outlined">open_in_new</i></a>
+				</article>
+				<hr>
+				<article>
+					<h2> > Pour le système d’information votre organisation </h2>
+					<br>
 					<h2>EcoDiag</h2>
 					<p>
 						Ici, nous nous éloignons de votre site web pour mesurer le bilan carbonne de votre structure. Ecodiag permet, à partir d'un inventaire des équipements informatiques 
 						sur un périmètre donné, de calculer le bilan carbone d'une année. 
+						Notre conseil : 
 					</p>
 					<a href="https://ecoinfo.cnrs.fr/ecodiag-calcul/" target="_blank" class="bigLinks" aria-label="lien vers l'outil Ecodiag sur le site EcoInfo">Ecodiag <i class="material-icons-outlined">open_in_new</i></a>
-				</article>
-				<hr>
-				<article>
-					<h2>Green Web Foundation</h2>
-					<p>
-						 Encore un outil en anglais, celui-ci indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
-						 est hébergé Green, à intégrer à votre site.
-					</p>
-					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<div class="bouton-result">

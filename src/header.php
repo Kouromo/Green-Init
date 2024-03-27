@@ -14,7 +14,7 @@
                         <span class="triangle">▼</span>
                     </a>
                     <ul class="sous">
-                        <li><a href="definition.php" value="allLinks" <?php if ($current_page == 'definition.php') echo 'aria-current="page"'; ?>>C'est quoi le numérique responsable ?</a></li>
+                        <li><a href="definition.php" value="allLinks" <?php if ($current_page == 'definition.php') echo 'aria-current="page"'; ?>>C'est quoi un service numérique responsable ?</a></li>
                         <li><a href="formulaire.php" value="3U" <?php if ($current_page == 'formulaire.php') echo 'aria-current="page"'; ?>>Est-ce que mon projet respecte les 3U</a></li>
                     </ul>
                 </li>
@@ -26,10 +26,10 @@
                     <ul class="sous">
                         <li><a href="commentEtPourquoiAgir.php#associationAgir" value="association" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>Association</a></li>
                         <li><a href="commentEtPourquoiAgir.php#collectiviteAgir" value="collectivite" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>Collectivité</a></li>
-                        <li><a href="commentEtPourquoiAgir.php#entrepriseAgir" value="tpe" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>TPE</a></li>
+                        <li><a href="commentEtPourquoiAgir.php#entrepriseAgir" value="tpe" <?php if ($current_page == 'commentEtPourquoiAgir.php') echo 'aria-current="page"'; ?>>TPE/PME</a></li>
                     </ul>
                 </li>
-                <li class="MenuItem"><a href="selectionDOutils.php" class="allLinks" <?php if ($current_page == 'selectionDOutils.php') echo 'aria-current="page"'; ?>>Sélection d'outils pour s'autoévaluer</a></li>
+                <li class="MenuItem"><a href="selectionDOutils.php" class="allLinks" <?php if ($current_page == 'selectionDOutils.php') echo 'aria-current="page"'; ?>>Sélection d'outils pour l'auto-évaluation</a></li>
                 <li class="MenuItem"><a href="notreOutilGreeninit.php" class="allLinks" <?php if ($current_page == 'notreOutilGreeninit.php') echo 'aria-current="page"'; ?>>Notre outil Green init</a></li>
                 <li class="MenuItem">
                     <a href="index.php" <?php if ($current_page == 'index.php') echo 'aria-current="page"'; ?>>
