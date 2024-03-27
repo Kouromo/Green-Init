@@ -42,11 +42,20 @@
 					<a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks" aria-label="lien vers le site PageSpeed">PageSpeed Insights <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
+				<article>
+					<h2>Green Web Foundation</h2>
+					<p>
+						 Outil en anglais, qui indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
+						 est hébergé Green, à intégrer à votre site.
+						 Notre conseil :
+					</p>
+					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation <i class="material-icons-outlined">open_in_new</i></a>
+				</article>
+				<hr>
 				<div class="bouton-result">
 					<a href="notreOutilGreeninit.php"><input class="bouton-vert" type="button" value="Tester son site"/></a>
 				</div>
 				<hr>
-				<br>
 				<span class="bigTextSpecial">Pour aller plus loin 🚀</span>
 				<article>
 					<h2>GTmetrix</h2>
@@ -64,16 +73,6 @@
 						Notre conseil : 
 					</p>
 					<a href="https://wave.webaim.org/" target="_blank" class="bigLinks" aria-label="lien vers le site Wave">Wave <i class="material-icons-outlined">open_in_new</i></a>
-				</article>
-				<hr>
-				<article>
-					<h2>Green Web Foundation</h2>
-					<p>
-						 Outil en anglais, qui indique si l'hébergement du site est Green. Si c'est le cas, il fourni un petit sticker au format image montrant que votre site
-						 est hébergé Green, à intégrer à votre site.
-						 Notre conseil :
-					</p>
-					<a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks" aria-label="lien vers la page de scan de Green Web Foundation">Green Web Foundation <i class="material-icons-outlined">open_in_new</i></a>
 				</article>
 				<hr>
 				<article>

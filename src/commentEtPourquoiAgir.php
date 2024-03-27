@@ -35,7 +35,7 @@ if ($result) {
                 echo "<a href='ajouter_retour_exp.php' class='bouton-vert'>Ajouter un reExp</a>";
             }
             if (isset($_SESSION['insert']) && $_SESSION['insert']) {
-                echo "<p class='message'>Votre retour d'expérience a bien été ajouté.</p>";
+                echo "<p class='message'>Votre retour d'expérience a bien été ajouté. 🌳</p>";
                 unset($_SESSION['insert']);
             }
             ?>
