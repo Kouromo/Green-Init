@@ -45,7 +45,7 @@
                     </div>
                 </section>
                 <section>
-                    <h2><a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks">Page speed <i class="material-icons-outlined">open_in_new</i></a></h2>
+                    <h2><a href="https://pagespeed.web.dev/" target="_blank" class="bigLinks">PageSpeed Insights <i class="material-icons-outlined">open_in_new</i></a></h2>
                     <div>
                         <label for="performances">Performances</label>
                         <input type="number" class="pageSpeed" name="performances" id="performances" placeholder="Performances" requiered="false">

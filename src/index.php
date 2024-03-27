@@ -54,7 +54,7 @@
                     <hr>
                 </article>
                 <article>
-                    <h2>C’est quoi un service Numérique Responsable ?</h2>
+                    <h2>C’est quoi un service Numérique Responsable ? 🤔</h2>
                     <ul>
                         <li><p>L’éco-conception optimisée</p></li>
                         <li><p>L’accessibilité web conforme</p></li>
