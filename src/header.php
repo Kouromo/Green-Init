@@ -9,6 +9,11 @@
         <nav role="navigation">
             <ul>
                 <li class="MenuItem">
+                    <a href="index.php" <?php if ($current_page == 'index.php') echo 'aria-current="page"'; ?>>
+                        <img class="logoSite" src="/img/logo.png" alt="Logo de GreenInit">
+                    </a>
+                </li>
+                <li class="MenuItem">
                     <a class="deroulant">
                         Introduction au numérique responsable
                         <span class="triangle">▼</span>
@@ -31,11 +36,6 @@
                 </li>
                 <li class="MenuItem"><a href="selectionDOutils.php" class="allLinks" <?php if ($current_page == 'selectionDOutils.php') echo 'aria-current="page"'; ?>>Sélection d'outils pour l'auto-évaluation</a></li>
                 <li class="MenuItem"><a href="notreOutilGreeninit.php" class="allLinks" <?php if ($current_page == 'notreOutilGreeninit.php') echo 'aria-current="page"'; ?>>Notre outil Green init</a></li>
-                <li class="MenuItem">
-                    <a href="index.php" <?php if ($current_page == 'index.php') echo 'aria-current="page"'; ?>>
-                        <img class="logoSite" src="/img/logo.png" alt="Logo de GreenInit">
-                    </a>
-                </li>
             </ul>
         </nav>
     </div>
