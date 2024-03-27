@@ -63,6 +63,17 @@
                         <input type="number" class="pageSpeed" name="SEO" id="SEO" placeholder="SEO" requiered="false">
                     </div>
                 </section>
+                <section>
+                    <h2><a href="https://www.thegreenwebfoundation.org/" target="_blank" class="bigLinks">Green Web Foundation <i class="material-icons-outlined">open_in_new</i></a></h2>
+                    <div>
+                        <label for="green_web">Hosté green ?</label>
+                        <select name="green_web" id="green_web" selected="empty">
+                            <option value="empty"></option>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+                    </div>
+                </section>
                 <button type="submit" class="bouton-vert">Envoyer les résultats</button>
             </form>
         </main>
@@ -97,6 +108,10 @@
             });
             tippy('#SEO', {
                 content: 'SEO de la page web sur 100 en version Desktop'
+            });
+
+            tippy('#green_web', {
+                content: 'Votre site est-il hébergé green ?'
             });
         </script>
     </body>

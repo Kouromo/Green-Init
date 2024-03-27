@@ -3,6 +3,7 @@
 // Default value
 $score_ecoindex = $poids = $complexite = $requetes = "";
 $performances = $accessibilite = $bonnes_pratiques = $seo = "";
+$green_web = "";
 
 // Get values from form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -15,6 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $accessibilite = $_POST['accessibilite'];
     $bonnes_pratiques = $_POST['bonnes_pratique'];
     $seo = $_POST['SEO'];
+
+    $green_web = $_POST['green_web'];
 }
 
 // Function utility
@@ -26,9 +29,8 @@ function wrapInParagraph($string, $boolean = false) {
 }
 
 
-if ($score_ecoindex !== null) {
+if ($score_ecoindex !== "") {
 
-    $texte_poids = "";
     switch (true) {
         case ($poids < 1):
             $texte_poids = "Bravo ! Votre site web est bien plus léger que la moyenne. Cependant, pour maintenir cette performance, vous pouvez encore optimiser son poids en suivant ces conseils : <br>
@@ -127,7 +129,7 @@ if ($score_ecoindex !== null) {
     }
 }
 
-if ($performances !== null)
+if ($performances !== "")
 {
     $texte_performances = "";
     switch (true) {
@@ -230,6 +232,24 @@ if ($performances !== null)
     }
 
 }
+
+if ($green_web !== "empty")
+{
+    $texte_green_web = "";
+    switch ($green_web) {
+        case "oui":
+            $texte_green_web = "Vous possédez un hébergement web Green ! Félicitations";
+            break;
+        case "non":
+            $texte_green_web = "Vous pouvez librement consulter la 
+                <a class='allLinks' 
+                href='https://datasets.thegreenwebfoundation.org/daily_snapshot?sql=select+distinct+hosted_by%2C+hosted_by_website%2C+partner%2C+green+from+greendomain+order+by+green+limit+101'>
+                base de données</a> des hébergements verts de The Green Web Foundation ";
+            break;
+    }
+}
+
+
 ?>
 
 
@@ -248,8 +268,8 @@ if ($performances !== null)
         <?php include 'header.php'; ?>
         <script src="menu-toggle.js"></script>
         <main>
+        <?php if ($score_ecoindex !== "" && $score_ecoindex !== null): ?>
             <section>
-                <?php if ($score_ecoindex !== "" && $score_ecoindex !== null): ?>
                     <h2>Résultats Écoindex</h2>
                     <article>
                         <h3>Votre score Écoindex :</h3>
@@ -286,11 +306,11 @@ if ($performances !== null)
                         <br><br>
                         <?php echo wrapInParagraph($texte_requetes); ?>
                     </article>
-                <?php endif; ?>
                 </section>
+            <?php endif; ?>
 
+            <?php if ($performances !== "" && $performances !== null): ?>
                 <section>
-                <?php if ($performances !== "" && $performances !== null): ?>
                     <h2>Résultats Speedpages</h2>
                     <article>
                         <h3>Performances de votre site :</h3>
@@ -328,7 +348,18 @@ if ($performances !== null)
                         <br>
                         <?php echo wrapInParagraph($texte_seo); ?>
                     </article>
-                <?php endif; ?>
+                </section>
+            <?php endif; ?>
+            <?php if ($green_web !== "empty"): ?>
+                <section>
+                    <h2>Green Web Foundation</h2>
+                    <article>
+                        <h3>Résultats WebPage</h3>
+                        <br>
+                        <?php echo wrapInParagraph($texte_green_web); ?>
+                    </article>
+                </section>
+            <?php endif; ?>
 
         </main>
         <?php include 'footer.php'; ?>

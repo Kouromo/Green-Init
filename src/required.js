@@ -27,6 +27,11 @@ function isEveythingEmpty(className) {
     return true;
 }
 
+function isSelectEmptyChoice(idName) {
+    var select = document.getElementById(idName);
+    return select.value === 'empty';
+}
+
 //************  Variables
 var ecoIndexElements = document.getElementsByClassName('ecoIndex');
 var pageSpeedElements = document.getElementsByClassName('pageSpeed');
@@ -77,7 +82,7 @@ for (var i = 0; i < pageSpeedElements.length; i++) {
 
 // Prevent form submission if all fields are empty
 document.getElementById('form').addEventListener('submit', function(event) {
-    if (isEveythingEmpty('ecoIndex') && isEveythingEmpty('pageSpeed')) {
+    if (isEveythingEmpty('ecoIndex') && isEveythingEmpty('pageSpeed') && isSelectEmptyChoice('green_web')) {
         alert('Veuillez remplir au moins un champ');
         event.preventDefault();
     }
