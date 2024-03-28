@@ -11,6 +11,7 @@
     <link rel="icon" href="\img\logo.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,-25" />
     <script src="https://cdn.tiny.cloud/1/rkuvwlj7ckswfkwb5pee3gh9p7anwlxhdkbrkhbg5mqrvyhc/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <title>ajout retour experience</title>
 </head>
 <body>
     <?php include 'header.php'; ?>

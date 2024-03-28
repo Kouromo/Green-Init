@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styleGlobal.css">
         <link rel="icon" href="\img\logo.png" />
         <link rel="stylesheet" href="footer.css">
-        <title>Comment et pourquoi agir ?</title>
+        <title>Connexion</title>
         <script src="matomo.js"></script>
     </head>
     <body>

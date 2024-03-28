@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
@@ -18,18 +19,16 @@
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				var allDetails = document.querySelectorAll('.question details');
-				allDetails.forEach(function (detail) {
+				allDetails.forEach(function (detail)) {
 					detail.addEventListener('toggle', function (event) {
 						if (event.target.open) {
-							// Fermer tous les autres détailsallDetails.forEach(function (otherDetail) {
 								if (otherDetail !== event.target) {
 									otherDetail.open = false;
-								}
+								}}
 							});
 						}
 					});
-				});
-			});
+				
 		</script>
 		<form>
 			<h1>Questionnaire 3U</h1>

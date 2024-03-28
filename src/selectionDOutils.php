@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="header.css">
 		<link rel="stylesheet" href="footer.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-		<title>Pages d'outils pour s'auto-diagnostiquer</title>
+		<title>Notre séléction d'outil</title>
 		<script src="matomo.js"></script>
 	</head>
 	<body>
